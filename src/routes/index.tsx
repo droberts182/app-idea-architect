@@ -3,6 +3,7 @@ import { SITE, CASE_STUDIES } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-ios-mockup.png";
+import iphoneMockupLeft from "@/assets/iphone-ios-mockup-left.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
