@@ -15,10 +15,14 @@ export function Header() {
   return (
     <header className="rule-bottom sticky top-0 z-40 bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-baseline gap-2" aria-label="Moblicode home">
-          <span className="font-display text-2xl tracking-tight text-foreground">
-            Moblicode
-          </span>
+        <Link to="/" className="flex items-center gap-3" aria-label="Moblicode home">
+          <img
+            src="/moblicode-logo.png"
+            alt="Moblicode"
+            className="h-9 w-auto sm:h-10"
+            width={160}
+            height={40}
+          />
           <span className="hidden text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground sm:inline">
             iOS · Android
           </span>
