@@ -4,6 +4,8 @@ import { CTABand } from "@/components/site/CTABand";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-ios-mockup.png";
 import iphoneMockupLeft from "@/assets/iphone-ios-mockup-left.png";
+import androidMockup from "@/assets/android-mockup.png";
+import androidMockupLeft from "@/assets/android-mockup-left.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,6 +92,26 @@ function HomePage() {
                     <img
                       src={iphoneMockupLeft}
                       alt="Polished iPhone, mirrored orientation, showing another iOS app build"
+                      width={1024}
+                      height={1024}
+                      loading="lazy"
+                      className="w-1/2 max-w-[180px]"
+                    />
+                  </div>
+                )}
+                {c.t === "Android development" && (
+                  <div className="mt-5 flex items-center justify-center gap-2 transition-transform group-hover:-translate-y-1">
+                    <img
+                      src={androidMockup}
+                      alt="Polished Android Pixel phone showing a native Android app built by Moblicode"
+                      width={1024}
+                      height={1024}
+                      loading="lazy"
+                      className="w-1/2 max-w-[180px]"
+                    />
+                    <img
+                      src={androidMockupLeft}
+                      alt="Polished Android Pixel phone, mirrored orientation, showing another Android app build"
                       width={1024}
                       height={1024}
                       loading="lazy"
