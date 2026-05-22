@@ -1,9 +1,9 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { CASE_STUDIES, SITE } from "@/lib/site";
+import { CASE_STUDIES, SITE, type CaseStudy } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 
 export const Route = createFileRoute("/work/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): CaseStudy => {
     const cs = CASE_STUDIES.find((c) => c.slug === params.slug);
     if (!cs) throw notFound();
     return cs;
