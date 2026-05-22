@@ -101,7 +101,7 @@ function ContactPage() {
                   <option value="ios">iOS app</option>
                   <option value="android">Android app</option>
                   <option value="ios_android">iOS + Android</option>
-                  <option value="submission_only">App Store submission only</option>
+                  <option value="submission_only">App Store / Play Store / ad-hoc distribution only</option>
                   <option value="other">Something else</option>
                 </select>
               </Field>
