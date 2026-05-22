@@ -54,7 +54,7 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function CaseStudyPage() {
-  const cs = Route.useLoaderData();
+  const cs = Route.useLoaderData() as CaseStudy;
   return (
     <>
       <section className="rule-bottom">
