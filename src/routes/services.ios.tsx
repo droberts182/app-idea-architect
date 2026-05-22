@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { Check } from "lucide-react";
-import iphoneMockup from "@/assets/iphone-ios-mockup.jpg";
+import iphoneMockup from "@/assets/iphone-ios-mockup.png";
 
 export const Route = createFileRoute("/services/ios")({
   head: () => ({
@@ -53,7 +53,7 @@ function IosPage() {
                 width={1024}
                 height={1024}
                 loading="lazy"
-                className="w-full max-w-sm rounded-3xl"
+                className="w-full max-w-sm"
               />
             </div>
           </div>
