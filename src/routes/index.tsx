@@ -119,6 +119,56 @@ function HomePage() {
                     />
                   </div>
                 )}
+                {c.t === "Middle-tier &amp; APIs" && (
+                  <div className="mt-5 flex items-center justify-center transition-transform group-hover:-translate-y-1">
+                    <svg
+                      viewBox="0 0 380 200"
+                      role="img"
+                      aria-label="Mock database schema diagram with users, sessions and events tables connected by relationships"
+                      className="w-full max-w-[380px] text-foreground"
+                    >
+                      <defs>
+                        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                          <path d="M0,0 L10,5 L0,10 z" fill="currentColor" opacity="0.5" />
+                        </marker>
+                      </defs>
+                      {/* users table */}
+                      <g>
+                        <rect x="8" y="20" width="110" height="110" rx="4" fill="none" stroke="currentColor" strokeOpacity="0.4" />
+                        <rect x="8" y="20" width="110" height="20" fill="currentColor" fillOpacity="0.08" />
+                        <text x="16" y="34" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="10" fill="currentColor">users</text>
+                        <text x="16" y="56" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">id  pk</text>
+                        <text x="16" y="72" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">email</text>
+                        <text x="16" y="88" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">name</text>
+                        <text x="16" y="104" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">created_at</text>
+                      </g>
+                      {/* sessions table */}
+                      <g>
+                        <rect x="135" y="50" width="110" height="100" rx="4" fill="none" stroke="currentColor" strokeOpacity="0.4" />
+                        <rect x="135" y="50" width="110" height="20" fill="currentColor" fillOpacity="0.08" />
+                        <text x="143" y="64" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="10" fill="currentColor">sessions</text>
+                        <text x="143" y="86" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">id  pk</text>
+                        <text x="143" y="102" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">user_id  fk</text>
+                        <text x="143" y="118" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">token</text>
+                        <text x="143" y="134" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">expires_at</text>
+                      </g>
+                      {/* events table */}
+                      <g>
+                        <rect x="262" y="30" width="110" height="120" rx="4" fill="none" stroke="currentColor" strokeOpacity="0.4" />
+                        <rect x="262" y="30" width="110" height="20" fill="currentColor" fillOpacity="0.08" />
+                        <text x="270" y="44" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="10" fill="currentColor">events</text>
+                        <text x="270" y="66" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">id  pk</text>
+                        <text x="270" y="82" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">user_id  fk</text>
+                        <text x="270" y="98" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">type</text>
+                        <text x="270" y="114" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">payload</text>
+                        <text x="270" y="130" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="currentColor" opacity="0.7">at</text>
+                      </g>
+                      {/* relations */}
+                      <path d="M118,75 L135,100" stroke="currentColor" strokeOpacity="0.5" fill="none" markerEnd="url(#arr)" />
+                      <path d="M118,75 C150,40 220,40 262,82" stroke="currentColor" strokeOpacity="0.5" fill="none" markerEnd="url(#arr)" />
+                    </svg>
+                  </div>
+                )}
               </Link>
             ))}
           </div>
