@@ -76,6 +76,16 @@ function HomePage() {
                   <ArrowUpRight className="h-4 w-4 translate-y-1 text-muted-foreground transition-transform group-hover:-translate-y-0 group-hover:text-accent" />
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: c.d }} />
+                {c.t === "iOS development" && (
+                  <img
+                    src={iphoneMockup}
+                    alt="Polished iPhone showing a native iOS app built by Moblicode"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    className="mt-5 w-full max-w-[260px] rounded-2xl transition-transform group-hover:-translate-y-1"
+                  />
+                )}
               </Link>
             ))}
           </div>
