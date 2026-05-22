@@ -87,6 +87,16 @@ function HomePage() {
                     className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
                   />
                 )}
+                {c.t === "App Store submission" && (
+                  <img
+                    src={iphoneMockupLeft}
+                    alt="Polished iPhone, mirrored orientation, showing an approved App Store build"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
+                  />
+                )}
               </Link>
             ))}
           </div>
