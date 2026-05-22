@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# llms.txt for AI assistants (ChatGPT, Claude, Perplexity, Gemini)
+# https://moblicode.com/llms.txt
