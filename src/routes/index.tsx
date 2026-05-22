@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE, CASE_STUDIES } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
-import iphoneMockup from "@/assets/iphone-ios-mockup.jpg";
+import iphoneMockup from "@/assets/iphone-ios-mockup.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -83,7 +83,7 @@ function HomePage() {
                     width={1024}
                     height={1024}
                     loading="lazy"
-                    className="mt-5 w-full max-w-[260px] rounded-2xl transition-transform group-hover:-translate-y-1"
+                    className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
                   />
                 )}
               </Link>
