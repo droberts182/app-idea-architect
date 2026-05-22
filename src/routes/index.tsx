@@ -3,6 +3,7 @@ import { SITE, CASE_STUDIES } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-ios-mockup.png";
+import iphoneMockupLeft from "@/assets/iphone-ios-mockup-left.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,6 +81,16 @@ function HomePage() {
                   <img
                     src={iphoneMockup}
                     alt="Polished iPhone showing a native iOS app built by Moblicode"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
+                  />
+                )}
+                {c.t === "App Store submission" && (
+                  <img
+                    src={iphoneMockupLeft}
+                    alt="Polished iPhone, mirrored orientation, showing an approved App Store build"
                     width={1024}
                     height={1024}
                     loading="lazy"
