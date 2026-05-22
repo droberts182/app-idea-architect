@@ -9,38 +9,211 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WorkRouteImport } from './routes/work'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AnswersRouteImport } from './routes/answers'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorkSlugRouteImport } from './routes/work.$slug'
+import { Route as ServicesIosRouteImport } from './routes/services.ios'
+import { Route as ServicesAppStoreSubmissionRouteImport } from './routes/services.app-store-submission'
+import { Route as ServicesAndroidRouteImport } from './routes/services.android'
 
+const WorkRoute = WorkRouteImport.update({
+  id: '/work',
+  path: '/work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnswersRoute = AnswersRouteImport.update({
+  id: '/answers',
+  path: '/answers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkSlugRoute = WorkSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => WorkRoute,
+} as any)
+const ServicesIosRoute = ServicesIosRouteImport.update({
+  id: '/ios',
+  path: '/ios',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesAppStoreSubmissionRoute =
+  ServicesAppStoreSubmissionRouteImport.update({
+    id: '/app-store-submission',
+    path: '/app-store-submission',
+    getParentRoute: () => ServicesRoute,
+  } as any)
+const ServicesAndroidRoute = ServicesAndroidRouteImport.update({
+  id: '/android',
+  path: '/android',
+  getParentRoute: () => ServicesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/answers': typeof AnswersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/work': typeof WorkRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
+  '/work/$slug': typeof WorkSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/answers': typeof AnswersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/work': typeof WorkRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
+  '/work/$slug': typeof WorkSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/answers': typeof AnswersRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/work': typeof WorkRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
+  '/work/$slug': typeof WorkSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/answers'
+    | '/contact'
+    | '/faq'
+    | '/services'
+    | '/work'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
+    | '/work/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/answers'
+    | '/contact'
+    | '/faq'
+    | '/services'
+    | '/work'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
+    | '/work/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/answers'
+    | '/contact'
+    | '/faq'
+    | '/services'
+    | '/work'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
+    | '/work/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AnswersRoute: typeof AnswersRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  ServicesRoute: typeof ServicesRouteWithChildren
+  WorkRoute: typeof WorkRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/work': {
+      id: '/work'
+      path: '/work'
+      fullPath: '/work'
+      preLoaderRoute: typeof WorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/answers': {
+      id: '/answers'
+      path: '/answers'
+      fullPath: '/answers'
+      preLoaderRoute: typeof AnswersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +221,72 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/$slug': {
+      id: '/work/$slug'
+      path: '/$slug'
+      fullPath: '/work/$slug'
+      preLoaderRoute: typeof WorkSlugRouteImport
+      parentRoute: typeof WorkRoute
+    }
+    '/services/ios': {
+      id: '/services/ios'
+      path: '/ios'
+      fullPath: '/services/ios'
+      preLoaderRoute: typeof ServicesIosRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/app-store-submission': {
+      id: '/services/app-store-submission'
+      path: '/app-store-submission'
+      fullPath: '/services/app-store-submission'
+      preLoaderRoute: typeof ServicesAppStoreSubmissionRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/android': {
+      id: '/services/android'
+      path: '/android'
+      fullPath: '/services/android'
+      preLoaderRoute: typeof ServicesAndroidRouteImport
+      parentRoute: typeof ServicesRoute
+    }
   }
 }
 
+interface ServicesRouteChildren {
+  ServicesAndroidRoute: typeof ServicesAndroidRoute
+  ServicesAppStoreSubmissionRoute: typeof ServicesAppStoreSubmissionRoute
+  ServicesIosRoute: typeof ServicesIosRoute
+}
+
+const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesAndroidRoute: ServicesAndroidRoute,
+  ServicesAppStoreSubmissionRoute: ServicesAppStoreSubmissionRoute,
+  ServicesIosRoute: ServicesIosRoute,
+}
+
+const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
+  ServicesRouteChildren,
+)
+
+interface WorkRouteChildren {
+  WorkSlugRoute: typeof WorkSlugRoute
+}
+
+const WorkRouteChildren: WorkRouteChildren = {
+  WorkSlugRoute: WorkSlugRoute,
+}
+
+const WorkRouteWithChildren = WorkRoute._addFileChildren(WorkRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AnswersRoute: AnswersRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  ServicesRoute: ServicesRouteWithChildren,
+  WorkRoute: WorkRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
