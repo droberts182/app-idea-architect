@@ -60,7 +60,7 @@ function HomePage() {
         <div className="container-page grid gap-12 py-20 md:grid-cols-[1fr_2fr]">
           <div>
             <div className="eyebrow">What we do</div>
-            <h2 className="mt-4">End-to-end mobile, from one engineer's hand.</h2>
+            <h2 className="mt-4">Mobile development solutions for any project.</h2>
           </div>
           <div className="grid gap-8 sm:grid-cols-2">
             {[
