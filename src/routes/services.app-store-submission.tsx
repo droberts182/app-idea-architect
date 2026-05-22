@@ -12,10 +12,10 @@ const faqs = [
 export const Route = createFileRoute("/services/app-store-submission")({
   head: () => ({
     meta: [
-      { title: "App Store submission service — get your iOS app approved | Moblicode" },
-      { name: "description", content: "End-to-end App Store and Google Play submission. We carry your app through Apple and Google review with 19+ years of submission experience. US-based." },
-      { property: "og:title", content: "App Store submission service — Moblicode" },
-      { property: "og:description", content: "We carry the application through Apple App Store and Google Play review, end-to-end." },
+      { title: "iOS (App Store) & Android (Play Store) distribution + ad-hoc | Moblicode" },
+      { name: "description", content: "End-to-end iOS App Store and Android Play Store distribution, plus ad-hoc (in-house) app distribution. 19+ years of submissions. US-based." },
+      { property: "og:title", content: "iOS & Android distribution, including ad-hoc — Moblicode" },
+      { property: "og:description", content: "We carry the application through Apple and Google review, and handle ad-hoc (in-house) distribution for enterprise builds." },
       { property: "og:url", content: "/services/app-store-submission" },
     ],
     links: [{ rel: "canonical", href: "/services/app-store-submission" }],
@@ -24,11 +24,11 @@ export const Route = createFileRoute("/services/app-store-submission")({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        name: "App Store and Google Play submission",
-        serviceType: "App Store submission",
+        name: "iOS App Store, Google Play, and ad-hoc app distribution",
+        serviceType: "App distribution",
         provider: { "@id": `${SITE.url}#organization` },
         areaServed: "US",
-        description: "End-to-end App Store and Google Play submission, including metadata, screenshots, privacy disclosures, and review-cycle support.",
+        description: "End-to-end iOS App Store and Android Google Play distribution, plus ad-hoc (in-house) distribution for enterprise builds — metadata, screenshots, privacy disclosures, and review-cycle support.",
       }),
     }, {
       type: "application/ld+json",
@@ -50,12 +50,12 @@ function SubmissionPage() {
     <>
       <section className="rule-bottom">
         <div className="container-page py-20 md:py-28">
-          <div className="eyebrow">Services / Submission</div>
+          <div className="eyebrow">Services / Distribution</div>
           <h1 className="mt-5 max-w-4xl">
-            App Store submission, <em className="italic text-accent">handled</em>.
+            iOS, Android &amp; ad-hoc distribution, <em className="italic text-accent">handled</em>.
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review. 19+ years of submissions — we know what gets approved and what gets rejected.
+            Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review — and ships ad-hoc (in-house) builds for enterprise distribution outside the public stores. 19+ years of submissions; we know what gets approved and what gets rejected.
           </p>
         </div>
       </section>
@@ -63,7 +63,7 @@ function SubmissionPage() {
       <section className="rule-bottom">
         <div className="container-page py-20">
           <div className="eyebrow">FAQ</div>
-          <h2 className="mt-4 max-w-3xl">Frequently asked questions about App Store submission.</h2>
+          <h2 className="mt-4 max-w-3xl">Frequently asked questions about App Store, Play Store &amp; ad-hoc distribution.</h2>
           <div className="mt-12 grid gap-10 md:grid-cols-2">
             {faqs.map(([q, a]) => (
               <div key={q} className="rule-top pt-5">

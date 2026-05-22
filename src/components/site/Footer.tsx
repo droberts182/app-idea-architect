@@ -17,7 +17,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link to="/services/ios" className="hover:text-accent">iOS development</Link></li>
               <li><Link to="/services/android" className="hover:text-accent">Android development</Link></li>
-              <li><Link to="/services/app-store-submission" className="hover:text-accent">App Store submission</Link></li>
+              <li><Link to="/services/app-store-submission" className="hover:text-accent">iOS & Android distribution</Link></li>
             </ul>
           </div>
           <div>

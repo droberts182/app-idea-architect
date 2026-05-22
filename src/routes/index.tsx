@@ -70,7 +70,7 @@ function HomePage() {
             {[
               { t: "iOS development", d: "Native Swift and SwiftUI applications, App Store submission included.", to: "/services/ios" },
               { t: "Android development", d: "Kotlin and Jetpack Compose for the full range of Android devices and tablets.", to: "/services/android" },
-              { t: "App Store submission", d: "We know what gets approved and what gets rejected. 19+ years of submissions.", to: "/services/app-store-submission" },
+              { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved.", to: "/services/app-store-submission" },
               { t: "Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant.", to: "/services" },
             ].map((c) => (
               <Link key={c.t} to={c.to} className="group rule-top pt-5">
