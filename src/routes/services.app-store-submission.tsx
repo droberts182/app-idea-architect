@@ -12,10 +12,10 @@ const faqs = [
 export const Route = createFileRoute("/services/app-store-submission")({
   head: () => ({
     meta: [
-      { title: "App Store submission service — get your iOS app approved | Moblicode" },
-      { name: "description", content: "End-to-end App Store and Google Play submission. We carry your app through Apple and Google review with 19+ years of submission experience. US-based." },
-      { property: "og:title", content: "App Store submission service — Moblicode" },
-      { property: "og:description", content: "We carry the application through Apple App Store and Google Play review, end-to-end." },
+      { title: "iOS (App Store) & Android (Play Store) distribution + ad-hoc | Moblicode" },
+      { name: "description", content: "End-to-end iOS App Store and Android Play Store distribution, plus ad-hoc (in-house) app distribution. 19+ years of submissions. US-based." },
+      { property: "og:title", content: "iOS & Android distribution, including ad-hoc — Moblicode" },
+      { property: "og:description", content: "We carry the application through Apple and Google review, and handle ad-hoc (in-house) distribution for enterprise builds." },
       { property: "og:url", content: "/services/app-store-submission" },
     ],
     links: [{ rel: "canonical", href: "/services/app-store-submission" }],
