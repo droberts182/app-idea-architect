@@ -24,11 +24,11 @@ export const Route = createFileRoute("/services/app-store-submission")({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        name: "App Store and Google Play submission",
-        serviceType: "App Store submission",
+        name: "iOS App Store, Google Play, and ad-hoc app distribution",
+        serviceType: "App distribution",
         provider: { "@id": `${SITE.url}#organization` },
         areaServed: "US",
-        description: "End-to-end App Store and Google Play submission, including metadata, screenshots, privacy disclosures, and review-cycle support.",
+        description: "End-to-end iOS App Store and Android Google Play distribution, plus ad-hoc (in-house) distribution for enterprise builds — metadata, screenshots, privacy disclosures, and review-cycle support.",
       }),
     }, {
       type: "application/ld+json",
