@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { Check } from "lucide-react";
+import iphoneMockup from "@/assets/iphone-ios-mockup.jpg";
 
 export const Route = createFileRoute("/services/ios")({
   head: () => ({
