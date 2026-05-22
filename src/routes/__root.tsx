@@ -77,7 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:title", content: "Moblicode — iOS & Android app development for every category" },
       { property: "og:description", content: SITE.pitch },
+      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:image:width", content: "1280" },
+      { property: "og:image:height", content: "704" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og-image.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
