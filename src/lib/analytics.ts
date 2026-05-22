@@ -15,7 +15,7 @@ export const GA_ID =
 
 export function initAnalytics() {
   if (typeof window === "undefined" || !GA_ID) return;
-  if (window.gtag) return; // already initialized
+  if (typeof window.gtag === "function") return; // already initialized
 
   // Inject gtag.js
   const s = document.createElement("script");
