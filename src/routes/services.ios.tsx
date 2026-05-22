@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { Check } from "lucide-react";
+import iphoneMockup from "@/assets/iphone-ios-mockup.jpg";
 
 export const Route = createFileRoute("/services/ios")({
   head: () => ({
@@ -35,13 +36,27 @@ function IosPage() {
     <>
       <section className="rule-bottom">
         <div className="container-page py-20 md:py-28">
-          <div className="eyebrow">Services / iOS</div>
-          <h1 className="mt-5 max-w-4xl">
-            iOS app development for <em className="italic text-accent">every</em> App Store category.
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            We build native iPhone and iPad applications in Swift and SwiftUI, and we carry every build through Apple's App Store review. 19+ years of submissions. We know what gets approved.
-          </p>
+          <div className="grid items-center gap-12 md:grid-cols-[1.3fr_1fr]">
+            <div>
+              <div className="eyebrow">Services / iOS</div>
+              <h1 className="mt-5 max-w-4xl">
+                iOS app development for <em className="italic text-accent">every</em> App Store category.
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+                We build native iPhone and iPad applications in Swift and SwiftUI, and we carry every build through Apple's App Store review. 19+ years of submissions. We know what gets approved.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <img
+                src={iphoneMockup}
+                alt="Polished iPhone mockup showing a native iOS app built by Moblicode"
+                width={1024}
+                height={1024}
+                loading="lazy"
+                className="w-full max-w-sm rounded-3xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
