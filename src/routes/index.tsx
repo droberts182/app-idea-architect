@@ -78,24 +78,24 @@ function HomePage() {
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: c.d }} />
                 {c.t === "iOS development" && (
-                  <img
-                    src={iphoneMockup}
-                    alt="Polished iPhone showing a native iOS app built by Moblicode"
-                    width={1024}
-                    height={1024}
-                    loading="lazy"
-                    className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
-                  />
-                )}
-                {c.t === "App Store submission" && (
-                  <img
-                    src={iphoneMockupLeft}
-                    alt="Polished iPhone, mirrored orientation, showing an approved App Store build"
-                    width={1024}
-                    height={1024}
-                    loading="lazy"
-                    className="mt-5 w-full max-w-[260px] transition-transform group-hover:-translate-y-1"
-                  />
+                  <div className="mt-5 flex items-center justify-center gap-2 transition-transform group-hover:-translate-y-1">
+                    <img
+                      src={iphoneMockup}
+                      alt="Polished iPhone showing a native iOS app built by Moblicode"
+                      width={1024}
+                      height={1024}
+                      loading="lazy"
+                      className="w-1/2 max-w-[180px]"
+                    />
+                    <img
+                      src={iphoneMockupLeft}
+                      alt="Polished iPhone, mirrored orientation, showing another iOS app build"
+                      width={1024}
+                      height={1024}
+                      loading="lazy"
+                      className="w-1/2 max-w-[180px]"
+                    />
+                  </div>
                 )}
               </Link>
             ))}
