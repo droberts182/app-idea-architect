@@ -20,10 +20,10 @@ const services = [
   },
   {
     to: "/services/app-store-submission",
-    eyebrow: "Submission",
-    title: "App Store & Google Play submission",
-    blurb: "We carry the application through Apple and Google review. 19+ years of submissions — we know what gets approved.",
-    keywords: ["app store submission service", "App Store approval"],
+    eyebrow: "Distribution",
+    title: "iOS (App Store) & Android (Play Store) distribution",
+    blurb: "Public store releases through Apple and Google review, plus ad-hoc (in-house) app distribution. 19+ years of submissions — we know what gets approved.",
+    keywords: ["app store submission service", "ad hoc app distribution", "in house app distribution"],
   },
 ] as const;
 
