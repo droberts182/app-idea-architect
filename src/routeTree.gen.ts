@@ -9,38 +9,99 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ServicesRouteImport } from './routes/services'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesIosRouteImport } from './routes/services.ios'
+import { Route as ServicesAppStoreSubmissionRouteImport } from './routes/services.app-store-submission'
+import { Route as ServicesAndroidRouteImport } from './routes/services.android'
 
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesIosRoute = ServicesIosRouteImport.update({
+  id: '/ios',
+  path: '/ios',
+  getParentRoute: () => ServicesRoute,
+} as any)
+const ServicesAppStoreSubmissionRoute =
+  ServicesAppStoreSubmissionRouteImport.update({
+    id: '/app-store-submission',
+    path: '/app-store-submission',
+    getParentRoute: () => ServicesRoute,
+  } as any)
+const ServicesAndroidRoute = ServicesAndroidRouteImport.update({
+  id: '/android',
+  path: '/android',
+  getParentRoute: () => ServicesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/services': typeof ServicesRouteWithChildren
+  '/services/android': typeof ServicesAndroidRoute
+  '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
+  '/services/ios': typeof ServicesIosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/services'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/services'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
+  id:
+    | '__root__'
+    | '/'
+    | '/services'
+    | '/services/android'
+    | '/services/app-store-submission'
+    | '/services/ios'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ServicesRoute: typeof ServicesRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,12 +109,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/ios': {
+      id: '/services/ios'
+      path: '/ios'
+      fullPath: '/services/ios'
+      preLoaderRoute: typeof ServicesIosRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/app-store-submission': {
+      id: '/services/app-store-submission'
+      path: '/app-store-submission'
+      fullPath: '/services/app-store-submission'
+      preLoaderRoute: typeof ServicesAppStoreSubmissionRouteImport
+      parentRoute: typeof ServicesRoute
+    }
+    '/services/android': {
+      id: '/services/android'
+      path: '/android'
+      fullPath: '/services/android'
+      preLoaderRoute: typeof ServicesAndroidRouteImport
+      parentRoute: typeof ServicesRoute
+    }
   }
 }
 
+interface ServicesRouteChildren {
+  ServicesAndroidRoute: typeof ServicesAndroidRoute
+  ServicesAppStoreSubmissionRoute: typeof ServicesAppStoreSubmissionRoute
+  ServicesIosRoute: typeof ServicesIosRoute
+}
+
+const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesAndroidRoute: ServicesAndroidRoute,
+  ServicesAppStoreSubmissionRoute: ServicesAppStoreSubmissionRoute,
+  ServicesIosRoute: ServicesIosRoute,
+}
+
+const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
+  ServicesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ServicesRoute: ServicesRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -1,0 +1,81 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SITE } from "@/lib/site";
+import { CTABand } from "@/components/site/CTABand";
+
+const faqs = [
+  ["How long does App Store submission approval take?", "Apple's median review time is 24 to 48 hours. First submissions for a new app, or apps that trigger sign-in or in-app-purchase review, can take longer. A clean submission packet — accurate metadata, working demo account, screenshots that match the current build — is the biggest factor."],
+  ["What is required for App Store submission?", "Apple requires a signed binary, App Store listing copy, screenshots for every supported device size, an app privacy disclosure, a content rating, age rating, demo account credentials if your app requires login, and (for apps with in-app purchases) tax and banking information at the App Store Connect level."],
+  ["How much does Apple charge for App Store submission?", "Apple charges $99/year for the standard Apple Developer Program membership. Submitting an app itself is free; Apple takes a commission on paid apps and in-app purchases (15% for most small developers, 30% for larger ones)."],
+  ["Why does App Store submission get rejected?", "The most common rejections are: missing or non-functional demo accounts, privacy policies that don't match what the app actually does, sign-in flows that don't support Sign in with Apple where Apple requires it, metadata that overstates what the app does, and use of private APIs."],
+];
+
+export const Route = createFileRoute("/services/app-store-submission")({
+  head: () => ({
+    meta: [
+      { title: "App Store submission service — get your iOS app approved | Moblicode" },
+      { name: "description", content: "End-to-end App Store and Google Play submission. We carry your app through Apple and Google review with 19+ years of submission experience. US-based." },
+      { property: "og:title", content: "App Store submission service — Moblicode" },
+      { property: "og:description", content: "We carry the application through Apple App Store and Google Play review, end-to-end." },
+      { property: "og:url", content: "/services/app-store-submission" },
+    ],
+    links: [{ rel: "canonical", href: "/services/app-store-submission" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "App Store and Google Play submission",
+        serviceType: "App Store submission",
+        provider: { "@id": `${SITE.url}#organization` },
+        areaServed: "US",
+        description: "End-to-end App Store and Google Play submission, including metadata, screenshots, privacy disclosures, and review-cycle support.",
+      }),
+    }, {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map(([q, a]) => ({
+          "@type": "Question", name: q,
+          acceptedAnswer: { "@type": "Answer", text: a },
+        })),
+      }),
+    }],
+  }),
+  component: SubmissionPage,
+});
+
+function SubmissionPage() {
+  return (
+    <>
+      <section className="rule-bottom">
+        <div className="container-page py-20 md:py-28">
+          <div className="eyebrow">Services / Submission</div>
+          <h1 className="mt-5 max-w-4xl">
+            App Store submission, <em className="italic text-accent">handled</em>.
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+            Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review. 19+ years of submissions — we know what gets approved and what gets rejected.
+          </p>
+        </div>
+      </section>
+
+      <section className="rule-bottom">
+        <div className="container-page py-20">
+          <div className="eyebrow">FAQ</div>
+          <h2 className="mt-4 max-w-3xl">Frequently asked questions about App Store submission.</h2>
+          <div className="mt-12 grid gap-10 md:grid-cols-2">
+            {faqs.map(([q, a]) => (
+              <div key={q} className="rule-top pt-5">
+                <h3 className="text-foreground">{q}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTABand headline="Stuck in App Store review?" body="If your build is finished but submission is the bottleneck, we can take it from here." />
+    </>
+  );
+}
