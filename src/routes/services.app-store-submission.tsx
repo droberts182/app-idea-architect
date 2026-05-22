@@ -50,12 +50,12 @@ function SubmissionPage() {
     <>
       <section className="rule-bottom">
         <div className="container-page py-20 md:py-28">
-          <div className="eyebrow">Services / Submission</div>
+          <div className="eyebrow">Services / Distribution</div>
           <h1 className="mt-5 max-w-4xl">
-            App Store submission, <em className="italic text-accent">handled</em>.
+            iOS, Android &amp; ad-hoc distribution, <em className="italic text-accent">handled</em>.
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review. 19+ years of submissions — we know what gets approved and what gets rejected.
+            Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review — and ships ad-hoc (in-house) builds for enterprise distribution outside the public stores. 19+ years of submissions; we know what gets approved and what gets rejected.
           </p>
         </div>
       </section>
@@ -63,7 +63,7 @@ function SubmissionPage() {
       <section className="rule-bottom">
         <div className="container-page py-20">
           <div className="eyebrow">FAQ</div>
-          <h2 className="mt-4 max-w-3xl">Frequently asked questions about App Store submission.</h2>
+          <h2 className="mt-4 max-w-3xl">Frequently asked questions about App Store, Play Store &amp; ad-hoc distribution.</h2>
           <div className="mt-12 grid gap-10 md:grid-cols-2">
             {faqs.map(([q, a]) => (
               <div key={q} className="rule-top pt-5">
