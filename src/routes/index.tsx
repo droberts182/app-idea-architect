@@ -197,6 +197,10 @@ function HomePage() {
           <h2 className="mt-4 max-w-3xl">
             We do the difficult parts of mobile so you don't have to learn them the hard way.
           </h2>
+        </div>
+      </section>
+
+
 
 
       <CTABand />
