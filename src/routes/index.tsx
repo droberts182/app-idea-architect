@@ -30,7 +30,7 @@ function HomePage() {
           <div>
             <div className="eyebrow">US-based · iOS &amp; Android · Est. {SITE.founded}</div>
             <h1 className="mt-5 text-foreground">
-              Mobile apps for <em className="font-display italic text-accent">every category</em>.
+              Mobile App &amp; Game solutions to fit <em className="font-display italic text-accent">any project</em>.
               Built to ship.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
