@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SITE, CASE_STUDIES } from "@/lib/site";
+import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-ios-mockup.png";
@@ -41,12 +41,6 @@ function HomePage() {
                 className="inline-flex h-12 items-center rounded-md bg-accent px-6 text-sm font-medium text-accent-foreground hover:opacity-90"
               >
                 Start a project
-              </Link>
-              <Link
-                to="/work"
-                className="inline-flex h-12 items-center rounded-md border border-foreground/15 px-6 text-sm font-medium hover:border-foreground/40"
-              >
-                See the work
               </Link>
             </div>
           </div>
@@ -219,40 +213,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Featured work */}
-      <section className="rule-bottom bg-foreground text-background">
-        <div className="container-page py-20">
-          <div className="flex items-end justify-between">
-            <div>
-              <div className="eyebrow !text-background/60">Selected work</div>
-              <h2 className="mt-4 text-background">Three apps. Three categories. One studio.</h2>
-            </div>
-            <Link to="/work" className="hidden text-sm text-background/70 underline-offset-4 hover:underline md:inline">
-              All work →
-            </Link>
-          </div>
-          <div className="mt-12 grid gap-10 md:grid-cols-3">
-            {CASE_STUDIES.map((cs) => (
-              <Link
-                key={cs.slug}
-                to="/work/$slug"
-                params={{ slug: cs.slug }}
-                className="group block border-t border-background/15 pt-5"
-              >
-                <div className="flex items-baseline justify-between text-xs text-background/60">
-                  <span>{cs.platform} · {cs.category}</span>
-                  <span>{cs.year}</span>
-                </div>
-                <h3 className="mt-3 text-background">{cs.title.split("—")[0].trim()}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-background/70">{cs.blurb}</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm text-accent">
-                  Read case study <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <CTABand />
     </>
