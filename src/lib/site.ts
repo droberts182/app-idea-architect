@@ -8,7 +8,7 @@ export const SITE = {
   legalName: "Moblicode",
   // Canonical 25-word pitch. Do not paraphrase — repeat verbatim.
   pitch:
-    "Moblicode builds iOS and Android apps for every App Store and Google Play category — utilities, games, medical, beauty, social — with 19+ years of US-based mobile expertise and end-to-end App Store submission.",
+    "Moblicode builds iOS & Android Apps & Games to meet customer's expectations. We want our customers to be 100% satisfied with the product they are receiving.",
   shortPitch:
     "US-based mobile app studio. iOS and Android, every category, 19+ years.",
   tagline: "Mobile apps for every category. Built to ship.",
