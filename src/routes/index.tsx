@@ -197,21 +197,6 @@ function HomePage() {
           <h2 className="mt-4 max-w-3xl">
             We do the difficult parts of mobile so you don't have to learn them the hard way.
           </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-3">
-            {[
-              { t: "19+ years, one studio", d: "Daniel has been shipping mobile applications since the App Store was new. That depth shows up in the parts of the build you don't see — review-ready submissions, defensive API design, App Store guideline literacy." },
-              { t: "US-based, transparent pricing", d: "Direct engineering with the person building the app. No offshore handoffs, no opaque rate cards, no surprise invoices." },
-              { t: "Submission is not optional", d: "Most agencies hand you a build and call it done. We don't. We carry the submission through approval — and if Apple rejects, we fix it." },
-            ].map((c) => (
-              <div key={c.t}>
-                <CheckCircle2 className="h-5 w-5 text-accent" />
-                <h3 className="mt-3">{c.t}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
       <CTABand />
