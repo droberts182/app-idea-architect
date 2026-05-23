@@ -90,7 +90,7 @@ function ServicesPage() {
       <section className="rule-top">
         <div className="container-page py-20">
           <div className="eyebrow">Who we work with</div>
-          <h2 className="mt-4 max-w-3xl">Startups, SMBs, individuals, and in-house product teams.</h2>
+          <h2 className="mt-4 max-w-3xl">Startups, Small - Medium Sized Businesses, Individuals</h2>
           <div className="mt-10 grid gap-8 md:grid-cols-4">
             {[
               { t: "Startups", d: "Validating an idea? We help you ship the version that actually tests it." },
