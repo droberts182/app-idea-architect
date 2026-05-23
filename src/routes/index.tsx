@@ -28,7 +28,7 @@ function HomePage() {
       <section className="rule-bottom">
         <div className="container-page grid gap-10 py-20 md:grid-cols-[1.6fr_1fr] md:py-28">
           <div>
-            <div className="eyebrow">US-based · iOS &amp; Android · Est. {SITE.founded}</div>
+            <div className="eyebrow">US-based · iOS &amp; Android</div>
             <h1 className="mt-5 text-foreground">
               Mobile App &amp; Game solutions to fit <em className="font-display italic text-accent">any project</em>.
             </h1>
