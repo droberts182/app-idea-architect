@@ -46,7 +46,7 @@ function HomePage() {
           </div>
           <aside className="rule-top md:rule-top-0 flex flex-col justify-end gap-6 pt-6 md:border-l md:border-t-0 md:pl-10 md:pt-0">
             <Stat n="19+" label={`Years building mobile (since ${SITE.founded})`} />
-            <Stat n="1M+" label="App Store downloads on a single client app" />
+            <Stat n="1M+" label="Our engineers have developed for apps downloaded millions of times" />
             <Stat n="26" label="App Store categories covered" />
           </aside>
         </div>
