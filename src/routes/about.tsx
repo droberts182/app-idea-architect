@@ -45,7 +45,7 @@ function AboutPage() {
       <section>
         <div className="container-page py-20">
           <div className="eyebrow">How we work</div>
-          <h2 className="mt-4 max-w-3xl">A small studio that ships, not a large agency that quotes.</h2>
+          <h2 className="mt-4 max-w-3xl">A professional mobile development company that delivers quality customers expect.</h2>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {[
               { t: "Direct engineering", d: "You talk to the person building your app. No account managers in the middle, no offshore handoffs." },
