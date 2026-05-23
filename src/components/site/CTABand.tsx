@@ -24,12 +24,6 @@ export function CTABand({
           >
             Start a project →
           </Link>
-          <Link
-            to="/work"
-            className="text-sm text-background/70 underline-offset-4 hover:underline"
-          >
-            Or see how we work →
-          </Link>
         </div>
       </div>
     </section>
