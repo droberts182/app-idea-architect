@@ -33,7 +33,7 @@ function HomePage() {
               Mobile App &amp; Game solutions to fit <em className="font-display italic text-accent">any project</em>.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              {SITE.pitch}
+              Moblicode builds iOS &amp; Android (Apps and Games) for every category of the iOS App Store &amp; Google Play Store — our engineers have experience building mobile since 2009.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
