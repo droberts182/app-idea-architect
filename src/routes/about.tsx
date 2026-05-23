@@ -38,7 +38,9 @@ function AboutPage() {
           <h1 className="mt-5 max-w-4xl">
             Any mobile solution <em className="italic text-accent">can</em> be made to happen.
           </h1>
-          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">{SITE.pitch}</p>
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+            Moblicode builds iOS & Android Apps & Games to meet customer's expectations. We want our customers to be <em className="italic text-accent">100% satisfied</em> with the product they are receiving.
+          </p>
         </div>
       </section>
 
