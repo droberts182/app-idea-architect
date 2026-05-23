@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import { Linkedin } from "lucide-react";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
