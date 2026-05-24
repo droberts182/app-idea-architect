@@ -135,6 +135,7 @@ function ContactPage() {
                 <li>1. We read your inquiry within one business day.</li>
                 <li>2. We reply with a few clarifying questions, or a phone call.</li>
                 <li>3. You get a fixed estimate, timeline, and engagement terms.</li>
+                <li>4. We work with our customers on being 100% satisfied.</li>
               </ol>
             </div>
           </aside>
