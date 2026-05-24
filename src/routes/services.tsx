@@ -19,6 +19,13 @@ const services = [
     keywords: ["android app development company", "custom mobile app development"],
   },
   {
+    to: "/contact",
+    eyebrow: "Database",
+    title: "Database development",
+    blurb: "Schema design, APIs, and cloud-hosted databases that power your mobile and web apps end-to-end.",
+    keywords: ["database development", "backend development", "API development"],
+  },
+  {
     to: "/services/app-store-submission",
     eyebrow: "Distribution",
     title: "iOS (App Store) & Android (Play Store) distribution",
