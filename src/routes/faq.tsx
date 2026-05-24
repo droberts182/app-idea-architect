@@ -22,8 +22,8 @@ const faqs = [
     a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for 100% customer satisfaction.",
   },
   {
-    q: "Who is Moblicode?",
-    a: "Moblicode is a US-based mobile application development studio founded by Daniel Roberts. The studio has 19+ years of experience building iOS and Android apps across every App Store and Google Play category, with end-to-end submission included in every engagement.",
+    q: "What is Moblicode?",
+    a: "Moblicode is an experienced mobile application development company originally founded by a Georgia Tech graduate and alumni with close to 19 years of mobile application development experience.",
   },
   {
     q: "Does Moblicode build for startups or only enterprise?",
