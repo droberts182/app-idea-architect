@@ -92,29 +92,10 @@ function ContactPage() {
                 <input type="email" value={form.email} onChange={(e) => update("email", e.target.value)} required className={inputClass} />
               </Field>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <Field label="Company (optional)">
-                <input value={form.company} onChange={(e) => update("company", e.target.value)} className={inputClass} />
-              </Field>
-              <Field label="What are you building?">
-                <select value={form.service} onChange={(e) => update("service", e.target.value)} className={inputClass}>
-                  <option value="ios">iOS app</option>
-                  <option value="android">Android app</option>
-                  <option value="ios_android">iOS + Android</option>
-                  <option value="submission_only">App Store / Play Store / ad-hoc distribution only</option>
-                  <option value="other">Something else</option>
-                </select>
-              </Field>
-            </div>
-            <Field label="Estimated budget (optional)">
-              <select value={form.budget} onChange={(e) => update("budget", e.target.value)} className={inputClass}>
-                <option value="">Prefer not to say</option>
-                <option value="under_25k">Under $25k</option>
-                <option value="25_50k">$25k–$50k</option>
-                <option value="50_100k">$50k–$100k</option>
-                <option value="100k_plus">$100k+</option>
-              </select>
+            <Field label="Company (optional)">
+              <input value={form.company} onChange={(e) => update("company", e.target.value)} className={inputClass} />
             </Field>
+
             <Field label="Tell us about the project" required>
               <textarea value={form.message} onChange={(e) => update("message", e.target.value)} required rows={6} className={inputClass} />
             </Field>
