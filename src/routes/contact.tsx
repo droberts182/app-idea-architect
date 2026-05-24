@@ -31,7 +31,7 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [form, setForm] = useState({
-    name: "", email: "", company: "", service: "ios", budget: "", message: "",
+    name: "", email: "", phone: "", company: "", service: "ios", budget: "", message: "",
   });
 
   function update<K extends keyof typeof form>(k: K, v: string) {
@@ -56,6 +56,7 @@ function ContactPage() {
       const body = [
         `Name: ${form.name}`,
         `Email: ${form.email}`,
+        `Phone: ${form.phone || "—"}`,
         `Company: ${form.company || "—"}`,
         `Service: ${form.service}`,
         `Budget: ${form.budget || "—"}`,
@@ -92,9 +93,14 @@ function ContactPage() {
                 <input type="email" value={form.email} onChange={(e) => update("email", e.target.value)} required className={inputClass} />
               </Field>
             </div>
-            <Field label="Company (optional)">
-              <input value={form.company} onChange={(e) => update("company", e.target.value)} className={inputClass} />
-            </Field>
+            <div className="grid gap-6 md:grid-cols-2">
+              <Field label="Phone number (optional)">
+                <input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={30} className={inputClass} />
+              </Field>
+              <Field label="Company (optional)">
+                <input value={form.company} onChange={(e) => update("company", e.target.value)} className={inputClass} />
+              </Field>
+            </div>
 
             <Field label="Tell us about the project" required>
               <textarea value={form.message} onChange={(e) => update("message", e.target.value)} required rows={6} className={inputClass} />
