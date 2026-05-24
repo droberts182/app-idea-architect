@@ -18,6 +18,10 @@ const faqs = [
     a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. The cost depends a lot on the time it will take to deliver the product. We aim for 100% customer satisfaction. Contact us for pricing.",
   },
   {
+    q: "What are some expected timelines for app development work?",
+    a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for customer satisfaction.",
+  },
+  {
     q: "Do I need a Mac to develop iOS apps?",
     a: "Yes — Xcode, Apple's required iOS build toolchain, runs only on macOS. Clients of Moblicode do not need their own Mac. We provide the build hardware and the Apple Developer Program accounts.",
   },
