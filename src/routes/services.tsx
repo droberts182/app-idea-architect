@@ -21,8 +21,8 @@ const services = [
   {
     to: "/contact",
     eyebrow: "Database",
-    title: "Database development",
-    blurb: "Schema design, APIs, and cloud-hosted databases that power your mobile and web apps end-to-end.",
+    title: "Database design",
+    blurb: "Middle-tier APIs & databases that tie into mobile applications we develop.",
     keywords: ["database development", "backend development", "API development"],
   },
   {
