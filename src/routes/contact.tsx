@@ -56,6 +56,7 @@ function ContactPage() {
       const body = [
         `Name: ${form.name}`,
         `Email: ${form.email}`,
+        `Phone: ${form.phone || "—"}`,
         `Company: ${form.company || "—"}`,
         `Service: ${form.service}`,
         `Budget: ${form.budget || "—"}`,
