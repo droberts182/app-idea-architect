@@ -67,9 +67,8 @@ function HomePage() {
               { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant.", to: "/services" },
             ].map((c) => (
               <Link key={c.t} to={c.to} className="group rule-top pt-5">
-                <h3 className="flex items-baseline justify-between text-foreground">
+                <h3 className="text-foreground">
                   <span dangerouslySetInnerHTML={{ __html: c.t }} />
-                  <ArrowUpRight className="h-4 w-4 translate-y-1 text-muted-foreground transition-transform group-hover:-translate-y-0 group-hover:text-accent" />
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: c.d }} />
                 {c.t === "iOS development" && (
