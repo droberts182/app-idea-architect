@@ -77,7 +77,7 @@ function ContactPage() {
           <div className="eyebrow">Contact</div>
           <h1 className="mt-5 max-w-4xl">Tell us what you want to ship.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            One business day response. We'll come back with honest scope, timeline, and a fixed estimate — not a deck.
+            We aim for 100% customer satisfaction.
           </p>
         </div>
       </section>
