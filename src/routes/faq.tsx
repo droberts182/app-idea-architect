@@ -22,10 +22,6 @@ const faqs = [
     a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for 100% customer satisfaction.",
   },
   {
-    q: "Do I need a Mac to develop iOS apps?",
-    a: "Yes — Xcode, Apple's required iOS build toolchain, runs only on macOS. Clients of Moblicode do not need their own Mac. We provide the build hardware and the Apple Developer Program accounts.",
-  },
-  {
     q: "Can you develop iOS apps on Windows?",
     a: "Not natively. Apple's official toolchain (Xcode) requires macOS. There are cross-platform workarounds, but for production-quality native iOS apps that pass App Store review, macOS is required. Moblicode handles the build environment so clients do not have to.",
   },
