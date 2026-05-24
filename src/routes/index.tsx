@@ -64,7 +64,7 @@ function HomePage() {
               { t: "iOS development", d: "Native Swift and SwiftUI applications, App Store submission included.", to: "/services/ios" },
               { t: "Android development", d: "Kotlin and Jetpack Compose for the full range of Android devices and tablets.", to: "/services/android" },
               { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved.", to: "/services/app-store-submission" },
-              { t: "Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant.", to: "/services" },
+              { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant.", to: "/services" },
             ].map((c) => (
               <Link key={c.t} to={c.to} className="group rule-top pt-5">
                 <h3 className="flex items-baseline justify-between text-foreground">
@@ -112,7 +112,7 @@ function HomePage() {
                     />
                   </div>
                 )}
-                {c.t === "Middle-tier &amp; APIs" && (
+                {c.t === "Databases, Middle-tier &amp; APIs" && (
                   <div className="mt-5 flex items-center justify-center transition-transform group-hover:-translate-y-1">
                     <svg
                       viewBox="0 0 380 200"
