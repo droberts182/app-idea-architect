@@ -31,7 +31,7 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [form, setForm] = useState({
-    name: "", email: "", company: "", service: "ios", budget: "", message: "",
+    name: "", email: "", phone: "", company: "", service: "ios", budget: "", message: "",
   });
 
   function update<K extends keyof typeof form>(k: K, v: string) {
