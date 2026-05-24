@@ -48,17 +48,6 @@ function AboutPage() {
         <div className="container-page py-20">
           <div className="eyebrow">How we work</div>
           <h2 className="mt-4 max-w-3xl">A professional mobile development company that delivers quality that customers expect.</h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {[
-              { t: "Direct engineering", d: "You talk to the person building your app. No account managers in the middle, no offshore handoffs." },
-              { t: "Fixed estimates", d: "We give you a defensible scope and price before any work starts. If it changes, we tell you before we bill against it." },
-            ].map((c) => (
-              <div key={c.t} className="rule-top pt-4">
-                <h3>{c.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
