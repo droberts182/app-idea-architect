@@ -34,10 +34,6 @@ const faqs = [
     a: "Most Google Play updates clear review within a few hours. First-time submissions and apps that trigger a manual policy review can take 1 to 7 days.",
   },
   {
-    q: "What does an App Store submission service actually do?",
-    a: "An App Store submission service prepares the binary, writes and uploads the listing copy and screenshots, fills the App Privacy disclosure, sets the content rating, configures demo credentials, submits the app to Apple, and responds to Apple review feedback until the application is approved. Moblicode does this for every iOS and Android app it builds.",
-  },
-  {
     q: "Who is Moblicode?",
     a: "Moblicode is a US-based mobile application development studio founded by Daniel Roberts. The studio has 19+ years of experience building iOS and Android apps across every App Store and Google Play category, with end-to-end submission included in every engagement.",
   },
