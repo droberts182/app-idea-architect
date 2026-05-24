@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 export function CTABand({
   eyebrow = "Start a project",
   headline = "Want to develop an app or game? We can build it.",
-  body = "Tell us what you're trying to build. We'll respond within one business day with honest scope, timeline, and pricing.",
+  body = "Tell us what you're trying to build.",
 }: {
   eyebrow?: string;
   headline?: string;
