@@ -98,6 +98,7 @@ function ServicesPage() {
         <div className="container-page py-20">
           <div className="eyebrow">Our Customers</div>
           <h2 className="mt-4 max-w-3xl">Startups, Small - Medium Sized Businesses, Individuals</h2>
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">We value our customers and aim for 100% customer satisfaction.</p>
         </div>
       </section>
 
