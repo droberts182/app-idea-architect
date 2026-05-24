@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-ios-mockup.png";
 import iphoneMockupLeft from "@/assets/iphone-ios-mockup-left.png";
 import androidMockup from "@/assets/android-mockup.png";
