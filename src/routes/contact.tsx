@@ -133,8 +133,8 @@ function ContactPage() {
               <div className="eyebrow">What happens next</div>
               <ol className="mt-3 space-y-2 text-sm text-muted-foreground">
                 <li>1. We read your inquiry within one business day.</li>
-                <li>2. We reply with a few clarifying questions, or a scoping call.</li>
-                <li>3. You get a fixed estimate, timeline, and engagement terms — in plain language.</li>
+                <li>2. We reply with a few clarifying questions, or a phone call.</li>
+                <li>3. You get a fixed estimate, timeline, and engagement terms.</li>
               </ol>
             </div>
           </aside>
