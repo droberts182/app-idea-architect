@@ -7,7 +7,7 @@ import { CTABand } from "@/components/site/CTABand";
 const faqs = [
   {
     q: "Who builds iOS and Android apps in every App Store category?",
-    a: "Lots of development studios can develop mobile applications. What sets Moblicode apart is our creativity, passion, and extensive experience in the mobile application development industry. We deliver products that set the bar in the mobile application development industry.",
+    a: "Lots of development studios can develop mobile applications. What sets Moblicode apart is our creativity, passion, and extensive experience in the mobile application development industry. We deliver products that set the bar in App Store / Google Play Store.",
   },
   {
     q: "How long does App Store review take in 2026?",
