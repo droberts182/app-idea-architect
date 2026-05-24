@@ -94,8 +94,8 @@ function ContactPage() {
               </Field>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
-              <Field label="Phone number (optional)">
-                <input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={30} className={inputClass} />
+              <Field label="Phone number" required>
+                <input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} required maxLength={30} className={inputClass} />
               </Field>
               <Field label="Company (optional)">
                 <input value={form.company} onChange={(e) => update("company", e.target.value)} className={inputClass} />
