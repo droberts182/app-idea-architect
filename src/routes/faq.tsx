@@ -26,8 +26,8 @@ const faqs = [
     a: "Moblicode is an experienced mobile application development company originally founded by a Georgia Tech graduate and alumni with close to 19 years of mobile application development experience.",
   },
   {
-    q: "Does Moblicode build for startups or only enterprise?",
-    a: "Both. Moblicode works with startups validating a first mobile idea, small and medium businesses launching their first or next app, individuals with a single concept, and in-house product teams that need additional mobile capacity.",
+    q: "Does Moblicode build for startups or individuals?",
+    a: "We value our customers and are willing to work with your budget and timelines. We have done work for both large and small businesses.",
   },
 ] as const;
 
