@@ -52,7 +52,7 @@ function SubmissionPage() {
         <div className="container-page py-20 md:py-28">
           <div className="eyebrow">Services / Distribution</div>
           <h1 className="mt-5 max-w-4xl">
-            iOS, Android &amp; ad-hoc distribution, <em className="italic text-accent">handled</em>.
+            iOS (App Store) &amp; Android (Play Store) distribution — including ad-hoc (in-house) <em className="italic text-accent">distribution model</em>.
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
             Most agencies hand you a build and call it done. We don't. Moblicode carries every application through Apple App Store and Google Play review — and ships ad-hoc (in-house) builds for enterprise distribution outside the public stores. 19+ years of submissions; we know what gets approved and what gets rejected.
