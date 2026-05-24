@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "What are some expected timelines for app development work?",
-    a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for customer satisfaction.",
+    a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for 100% customer satisfaction.",
   },
   {
     q: "Do I need a Mac to develop iOS apps?",
