@@ -13,7 +13,7 @@ export const SITE = {
     "US-based mobile app studio. iOS and Android, every category, 19+ years.",
   tagline: "Mobile apps for every category. Built to ship.",
   url: "https://moblicode.com",
-  email: "hello@moblicode.com",
+  email: "support@moblicode.com",
   phoneDisplay: "+1 (555) 010-2025",
   phoneE164: "+15550102025",
   founderName: "Daniel Roberts",
