@@ -14,10 +14,6 @@ const faqs = [
     a: "Apple's median review time is 24 to 48 hours. Most clean submissions clear within a day. First submissions for a new app, apps that trigger sign-in or in-app-purchase review, or apps with unclear privacy disclosures can take longer.",
   },
   {
-    q: "What is required for an App Store submission?",
-    a: "A signed iOS binary, App Store listing copy, screenshots for every supported device size, an App Privacy disclosure, a content rating, a working demo account if the app requires login, and (for paid apps or in-app purchases) tax and banking information set up in App Store Connect.",
-  },
-  {
     q: "How much does it cost to develop a mobile app solution?",
     a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. The cost depends a lot on the time it will take to deliver the product. We aim for 100% customer satisfaction. Contact us for pricing.",
   },
