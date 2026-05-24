@@ -18,8 +18,8 @@ const faqs = [
     a: "A signed iOS binary, App Store listing copy, screenshots for every supported device size, an App Privacy disclosure, a content rating, a working demo account if the app requires login, and (for paid apps or in-app purchases) tax and banking information set up in App Store Connect.",
   },
   {
-    q: "How much does it cost to develop an iOS app?",
-    a: "A defensible iOS MVP typically costs between $25,000 and $90,000 depending on scope. Moblicode provides a fixed estimate before any engineering work begins.",
+    q: "How much does it cost to develop a mobile app solution?",
+    a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. The cost depends a lot on the time it will take to deliver the product. We aim for 100% customer satisfaction. Contact us for pricing.",
   },
   {
     q: "Do I need a Mac to develop iOS apps?",
