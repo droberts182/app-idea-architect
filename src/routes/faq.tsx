@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "How long does App Store review take in 2026?",
-    a: "Apple's median review time is 24 to 48 hours. Most clean submissions clear within a day. First submissions for a new app, apps that trigger sign-in or in-app-purchase review, or apps with unclear privacy disclosures can take longer.",
+    a: "Apple's app review time is much longer than in past years. Apple has stringent compliancy rules for their applications. Google Play Store's review process is fairly straightforward and much more simple. Ad-hoc distribution builds (outside of the App Store and Play Store) can be distributed immediately.",
   },
   {
     q: "How much does it cost to develop a mobile app solution?",
