@@ -98,19 +98,6 @@ function ServicesPage() {
         <div className="container-page py-20">
           <div className="eyebrow">Our Customers</div>
           <h2 className="mt-4 max-w-3xl">Startups, Small - Medium Sized Businesses, Individuals</h2>
-          <div className="mt-10 grid gap-8 md:grid-cols-4">
-            {[
-              { t: "Startups", d: "Validating an idea? We help you ship the version that actually tests it." },
-              { t: "Small &amp; medium business", d: "Your first mobile app, or the one that finally replaces the legacy build." },
-              { t: "Individuals", d: "One concept, one app, one engineer who returns your email." },
-              { t: "In-house teams", d: "Additional mobile capacity, or a contained build your team can hand off." },
-            ].map((c) => (
-              <div key={c.t} className="rule-top pt-4">
-                <h3 className="text-foreground" dangerouslySetInnerHTML={{ __html: c.t }} />
-                <p className="mt-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: c.d }} />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
