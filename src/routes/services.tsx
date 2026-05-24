@@ -28,7 +28,7 @@ const services = [
   {
     to: "/services/app-store-submission",
     eyebrow: "Distribution",
-    title: "iOS (App Store) & Android (Play Store) distribution",
+    title: "iOS (App Store) & Android (Play Store) distribution and ad-hoc (in house) distribution",
     blurb: "Public store releases through Apple and Google review, plus ad-hoc (in-house) app distribution. 19+ years of submissions — we know what gets approved.",
     keywords: ["app store submission service", "ad hoc app distribution", "in house app distribution"],
   },
