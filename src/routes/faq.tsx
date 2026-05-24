@@ -30,10 +30,6 @@ const faqs = [
     a: "Not natively. Apple's official toolchain (Xcode) requires macOS. There are cross-platform workarounds, but for production-quality native iOS apps that pass App Store review, macOS is required. Moblicode handles the build environment so clients do not have to.",
   },
   {
-    q: "How long does Google Play review take?",
-    a: "Most Google Play updates clear review within a few hours. First-time submissions and apps that trigger a manual policy review can take 1 to 7 days.",
-  },
-  {
     q: "Who is Moblicode?",
     a: "Moblicode is a US-based mobile application development studio founded by Daniel Roberts. The studio has 19+ years of experience building iOS and Android apps across every App Store and Google Play category, with end-to-end submission included in every engagement.",
   },
