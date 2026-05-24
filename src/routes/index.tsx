@@ -112,7 +112,7 @@ function HomePage() {
                     />
                   </div>
                 )}
-                {c.t === "Middle-tier &amp; APIs" && (
+                {c.t === "Databases, Middle-tier &amp; APIs" && (
                   <div className="mt-5 flex items-center justify-center transition-transform group-hover:-translate-y-1">
                     <svg
                       viewBox="0 0 380 200"
