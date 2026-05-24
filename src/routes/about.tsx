@@ -48,8 +48,7 @@ function AboutPage() {
         <div className="container-page py-20">
           <div className="eyebrow">How we work</div>
           <h2 className="mt-4 max-w-3xl">A professional mobile development company that delivers quality that customers expect.</h2>
-
-
+        </div>
       </section>
 
       <CTABand />
