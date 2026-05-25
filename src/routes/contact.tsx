@@ -127,6 +127,7 @@ function ContactPage() {
                 <li><a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-accent"><Mail className="h-4 w-4" /> {SITE.email}</a></li>
                 <li><a href={`tel:${SITE.phoneE164}`} onClick={() => trackEvent("phone_click", { source: "contact_page" })} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {SITE.phoneDisplay}</a></li>
                 <li><a href={SITE.founderLinkedIn} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent"><Linkedin className="h-4 w-4" /> LinkedIn</a></li>
+                <li><a href={SITE.googleProfile} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Google</a></li>
               </ul>
             </div>
             <div>
