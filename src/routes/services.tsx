@@ -15,7 +15,7 @@ const services = [
     to: "/services/android",
     eyebrow: "Android",
     title: "Android app development",
-    blurb: "Kotlin and Jetpack Compose. Built for the full range of Android phones and tablets, not just the flagship.",
+    blurb: "Android (Phone / Tablet) application built for the next generation of apps.",
     keywords: ["android app development company", "custom mobile app development"],
   },
   {
