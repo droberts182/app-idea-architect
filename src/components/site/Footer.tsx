@@ -23,8 +23,8 @@ export function Footer() {
           <div>
             <div className="eyebrow mb-3">Company</div>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/about" className="hover:text-accent">About</Link></li>
               <li><Link to="/services" className="hover:text-accent">Services</Link></li>
+              <li><Link to="/about" className="hover:text-accent">About</Link></li>
               <li><Link to="/faq" className="hover:text-accent">FAQ</Link></li>
               <li><Link to="/answers" className="hover:text-accent">Answers</Link></li>
             </ul>
