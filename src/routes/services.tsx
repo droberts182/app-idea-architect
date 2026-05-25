@@ -8,7 +8,7 @@ const services = [
     to: "/services/ios",
     eyebrow: "iOS",
     title: "iOS app development",
-    blurb: "Native Swift and SwiftUI applications for iPhone and iPad. Every App Store category, every form factor.",
+    blurb: "iOS (iPhone/iPad) apps and games for all categories of the App Store. Ad-hoc (outside of the App Store) distribution is always an option.",
     keywords: ["iOS app development company", "hire iOS developer", "iPhone app developers"],
   },
   {
