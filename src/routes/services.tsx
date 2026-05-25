@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import { ArrowUpRight } from "lucide-react";
+
 
 const services = [
   {
