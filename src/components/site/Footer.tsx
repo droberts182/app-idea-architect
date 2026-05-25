@@ -35,6 +35,7 @@ export function Footer() {
               <li><a href={`mailto:${SITE.email}`} className="hover:text-accent">{SITE.email}</a></li>
               <li><a href={`tel:${SITE.phoneE164}`} className="hover:text-accent">{SITE.phoneDisplay}</a></li>
               <li><a href={SITE.founderLinkedIn} target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a></li>
+              <li><a href={SITE.googleProfile} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Google</a></li>
             </ul>
           </div>
         </div>

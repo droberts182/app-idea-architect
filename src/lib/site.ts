@@ -19,6 +19,7 @@ export const SITE = {
   founderName: "Daniel Roberts",
   founderTitle: "Founder & Lead Mobile Engineer",
   founderLinkedIn: "https://www.linkedin.com/in/ttm182/",
+  googleProfile: "https://share.google/U4fNKmw2oLAg88L",
   founderBio:
     "With well over 15 years of experience in mobile application development, Daniel specializes in creating tailored mobile app solutions for individuals and any-sized businesses. His expertise spans iOS and Android, enabling polished, creative, technically sound applications across every App Store and Google Play category.",
   yearsInBusiness: 19,
