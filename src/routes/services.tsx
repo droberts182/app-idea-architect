@@ -84,9 +84,6 @@ function ServicesPage() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed text-foreground/85">{s.blurb}</p>
-                  <span className="mt-5 inline-flex items-center gap-1 text-sm text-accent">
-                    Read more <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                  </span>
                 </div>
               </Link>
             ))}
