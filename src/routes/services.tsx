@@ -15,7 +15,7 @@ const services = [
     to: "/services/android",
     eyebrow: "Android",
     title: "Android app development",
-    blurb: "Android (Phone / Tablet) application built for the next generation of apps.",
+    blurb: "Android (Phone / Tablet) applications built for the next generation of apps.",
     keywords: ["android app development company", "custom mobile app development"],
   },
   {
