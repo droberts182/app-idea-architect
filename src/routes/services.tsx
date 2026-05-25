@@ -66,7 +66,7 @@ function ServicesPage() {
       <section className="rule-bottom">
         <div className="container-page py-20 md:py-28">
           <div className="eyebrow">Services</div>
-          <h1 className="mt-5 max-w-4xl">What we build &amp; carry through for our customer's needs</h1>
+          <h1 className="mt-5 max-w-4xl">What we build &amp; execute for our customer's needs</h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
             {SITE.pitch}
           </p>
