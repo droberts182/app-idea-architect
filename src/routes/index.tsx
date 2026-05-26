@@ -62,7 +62,7 @@ function HomePage() {
           <div className="grid gap-8 sm:grid-cols-2">
             {[
               { t: "iOS development", d: "Native Swift and Swift UI Applications (all categories) &amp; Games (2.5D-3D games &amp; worlds) for all iOS devices (iPhone &amp; iPad)" },
-              { t: "Android development", d: "Kotlin and Jetpack Compose for the full range of Android devices and tablets." },
+              { t: "Android development", d: "Kotlin and Jetpack Compose for any Android application imaginable — developed for the full range of Android devices and tablets." },
               { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved." },
               { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant." },
             ].map((c) => (
