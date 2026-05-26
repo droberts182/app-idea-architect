@@ -39,7 +39,7 @@ function AboutPage() {
             Any mobile solution <em className="italic text-accent">can</em> be made to happen.
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            Moblicode builds iOS & Android Apps & Games to meet customer's expectations. We want our customers to be <em className="italic text-accent">100% satisfied</em> with the product they are receiving.
+            Moblicode builds iOS & Android Apps & Games to meet customer's expectations. We want our customers to be <em className="italic" style={{ color: "oklch(0.62 0.17 150)" }}>100% satisfied</em> with the product they are receiving.
           </p>
         </div>
       </section>
