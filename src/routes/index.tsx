@@ -61,12 +61,12 @@ function HomePage() {
           </div>
           <div className="grid gap-8 sm:grid-cols-2">
             {[
-              { t: "iOS development", d: "Native Swift and SwiftUI applications, App Store submission included.", to: "/services/ios" },
-              { t: "Android development", d: "Kotlin and Jetpack Compose for the full range of Android devices and tablets.", to: "/services/android" },
-              { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved.", to: "/services/app-store-submission" },
-              { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant.", to: "/services" },
+              { t: "iOS development", d: "Native Swift and SwiftUI applications, App Store submission included." },
+              { t: "Android development", d: "Kotlin and Jetpack Compose for the full range of Android devices and tablets." },
+              { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved." },
+              { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant." },
             ].map((c) => (
-              <Link key={c.t} to={c.to} className="group rule-top pt-5">
+              <div key={c.t} className="group rule-top pt-5">
                 <h3 className="text-foreground">
                   <span dangerouslySetInnerHTML={{ __html: c.t }} />
                 </h3>
@@ -161,7 +161,7 @@ function HomePage() {
                     </svg>
                   </div>
                 )}
-              </Link>
+              </div>
             ))}
           </div>
         </div>
