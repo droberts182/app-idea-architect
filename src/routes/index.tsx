@@ -161,7 +161,7 @@ function HomePage() {
                     </svg>
                   </div>
                 )}
-              </Link>
+              </div>
             ))}
           </div>
         </div>
