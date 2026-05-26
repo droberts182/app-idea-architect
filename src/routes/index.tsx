@@ -64,7 +64,7 @@ function HomePage() {
               { t: "iOS development", d: "Native Swift and Swift UI Applications (all categories) &amp; Games (2.5D-3D games &amp; worlds) for all iOS devices (iPhone &amp; iPad)" },
               { t: "Android development", d: "Kotlin and Jetpack Compose for any Android application imaginable — developed for the full range of Android devices and tablets." },
               { t: "iOS (App Store) &amp; Android (Play Store) distribution", d: "Public store releases plus ad-hoc (in-house) distribution. 19+ years of submissions — we know what gets approved." },
-              { t: "Databases, Middle-tier &amp; APIs", d: "The database and API layer that makes the app feel instant." },
+              { t: "Databases, Middle-tier &amp; APIs", d: "The database and API middle-tier software development to add complexity to your application(s)." },
             ].map((c) => (
               <div key={c.t} className="group rule-top pt-5">
                 <h3 className="text-foreground">
