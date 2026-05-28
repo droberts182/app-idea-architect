@@ -62,7 +62,7 @@ export function Header() {
                 key={n.to}
                 to={n.to}
                 onClick={() => setOpen(false)}
-                className="py-2 text-base text-foreground/80"
+                className="py-2 text-base text-foreground/80 transition-colors hover:text-accent"
               >
                 {n.label}
               </Link>
