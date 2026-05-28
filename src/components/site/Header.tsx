@@ -29,7 +29,7 @@ export function Header() {
             <Link
               key={n.to}
               to={n.to}
-              className="text-sm text-foreground/70 transition-colors hover:text-foreground"
+              className="text-sm text-foreground/70 transition-colors hover:text-accent"
               activeProps={{ className: "text-foreground" }}
             >
               {n.label}
