@@ -5,6 +5,14 @@ import { trackLead, trackEvent } from "@/lib/analytics";
 import { Mail, Phone, Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
+  server: {
+    handlers: {
+      POST: async ({ request }) => {
+        const { handleContactRequest } = await import("@/lib/contact-email.server");
+        return handleContactRequest(request);
+      },
+    },
+  },
   head: () => ({
     meta: [
       { title: "Contact Moblicode — start an iOS or Android app project" },
@@ -51,7 +59,7 @@ function ContactPage() {
     trackEvent("form_field_engagement", { service: form.service, budget: form.budget });
 
     try {
-      const res = await fetch("/api/public/contact", {
+      const res = await fetch("/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -113,8 +121,7 @@ function ContactPage() {
             )}
             {status === "error" && (
               <p className="text-sm text-destructive">
-                Couldn't send. Please email{" "}
-                <a href={`mailto:${SITE.email}`} className="text-accent underline-offset-2 hover:underline">{SITE.email}</a> directly.
+                Couldn't send. Please try again, or call {SITE.phoneDisplay}.
               </p>
             )}
           </form>
@@ -123,7 +130,7 @@ function ContactPage() {
             <div>
               <div className="eyebrow">Direct</div>
               <ul className="mt-3 space-y-3 text-sm">
-                <li><a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-accent"><Mail className="h-4 w-4" /> {SITE.email}</a></li>
+                <li><span className="flex items-center gap-2"><Mail className="h-4 w-4" /> {SITE.email}</span></li>
                 <li><a href={`tel:${SITE.phoneE164}`} onClick={() => trackEvent("phone_click", { source: "contact_page" })} className="flex items-center gap-2 hover:text-accent"><Phone className="h-4 w-4" /> {SITE.phoneDisplay}</a></li>
                 <li><a href={SITE.founderLinkedIn} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent"><Linkedin className="h-4 w-4" /> LinkedIn</a></li>
                 <li><a href={SITE.googleProfile} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Google</a></li>
