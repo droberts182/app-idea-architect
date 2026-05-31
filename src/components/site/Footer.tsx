@@ -32,7 +32,7 @@ export function Footer() {
           <div>
             <div className="eyebrow mb-3">Contact</div>
             <ul className="space-y-2 text-sm">
-              <li><a href={`mailto:${SITE.email}`} className="hover:text-accent">{SITE.email}</a></li>
+              <li><span>{SITE.email}</span></li>
               <li><a href={`tel:${SITE.phoneE164}`} className="hover:text-accent">{SITE.phoneDisplay}</a></li>
               <li><a href={SITE.founderLinkedIn} target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a></li>
               <li><a href={SITE.googleProfile} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Google</a></li>
