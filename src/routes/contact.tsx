@@ -42,29 +42,23 @@ function ContactPage() {
     e.preventDefault();
     setStatus("sending");
 
-    // Fire analytics conversion event FIRST so it lands even if the mail handoff fails.
+    // Fire analytics conversion event FIRST so it lands even if the request fails.
     trackLead({
       source: "contact_page",
       service: form.service,
-      value: 1500, // adjust to your average lead-to-customer math
+      value: 1500,
     });
     trackEvent("form_field_engagement", { service: form.service, budget: form.budget });
 
-    // Without a backend wired yet, hand off via mailto. Easy to swap for a server fn later.
     try {
-      const subject = `New project inquiry — ${form.name}${form.company ? ` (${form.company})` : ""}`;
-      const body = [
-        `Name: ${form.name}`,
-        `Email: ${form.email}`,
-        `Phone: ${form.phone || "—"}`,
-        `Company: ${form.company || "—"}`,
-        `Service: ${form.service}`,
-        `Budget: ${form.budget || "—"}`,
-        ``,
-        form.message,
-      ].join("\n");
-      window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const res = await fetch("/api/public/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Send failed");
       setStatus("sent");
+      setForm({ name: "", email: "", phone: "", company: "", service: "ios", budget: "", message: "" });
     } catch {
       setStatus("error");
     }
@@ -110,12 +104,17 @@ function ContactPage() {
               disabled={status === "sending"}
               className="inline-flex h-12 items-center rounded-md bg-accent px-6 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
             >
-              {status === "sending" ? "Sending…" : status === "sent" ? "Opening your email client…" : "Send inquiry"}
+              {status === "sending" ? "Sending…" : status === "sent" ? "Inquiry sent ✓" : "Send inquiry"}
             </button>
             {status === "sent" && (
               <p className="text-sm text-muted-foreground">
-                If your email client didn't open, write directly to{" "}
-                <a href={`mailto:${SITE.email}`} className="text-accent underline-offset-2 hover:underline">{SITE.email}</a>.
+                Thanks — we've received your inquiry and will reply within one business day.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-sm text-destructive">
+                Couldn't send. Please email{" "}
+                <a href={`mailto:${SITE.email}`} className="text-accent underline-offset-2 hover:underline">{SITE.email}</a> directly.
               </p>
             )}
           </form>
