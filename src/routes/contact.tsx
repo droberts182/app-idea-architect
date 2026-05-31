@@ -3,12 +3,14 @@ import { useState } from "react";
 import { SITE } from "@/lib/site";
 import { trackLead, trackEvent } from "@/lib/analytics";
 import { Mail, Phone, Linkedin } from "lucide-react";
-import { handleContactRequest } from "@/lib/contact-email.server";
 
 export const Route = createFileRoute("/contact")({
   server: {
     handlers: {
-      POST: async ({ request }) => handleContactRequest(request),
+      POST: async ({ request }) => {
+        const { handleContactRequest } = await import("@/lib/contact-email.server");
+        return handleContactRequest(request);
+      },
     },
   },
   head: () => ({
