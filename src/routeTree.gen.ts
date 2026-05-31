@@ -18,6 +18,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIosRouteImport } from './routes/services.ios'
 import { Route as ServicesAppStoreSubmissionRouteImport } from './routes/services.app-store-submission'
 import { Route as ServicesAndroidRouteImport } from './routes/services.android'
+import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
@@ -65,6 +66,12 @@ const ServicesAndroidRoute = ServicesAndroidRouteImport.update({
   path: '/android',
   getParentRoute: () => ServicesRoute,
 } as any)
+const LovableEmailQueueProcessRoute =
+  LovableEmailQueueProcessRouteImport.update({
+    id: '/lovable/email/queue/process',
+    path: '/lovable/email/queue/process',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -76,6 +83,7 @@ export interface FileRoutesByFullPath {
   '/services/android': typeof ServicesAndroidRoute
   '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
   '/services/ios': typeof ServicesIosRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -87,6 +95,7 @@ export interface FileRoutesByTo {
   '/services/android': typeof ServicesAndroidRoute
   '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
   '/services/ios': typeof ServicesIosRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -99,6 +108,7 @@ export interface FileRoutesById {
   '/services/android': typeof ServicesAndroidRoute
   '/services/app-store-submission': typeof ServicesAppStoreSubmissionRoute
   '/services/ios': typeof ServicesIosRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -112,6 +122,7 @@ export interface FileRouteTypes {
     | '/services/android'
     | '/services/app-store-submission'
     | '/services/ios'
+    | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -123,6 +134,7 @@ export interface FileRouteTypes {
     | '/services/android'
     | '/services/app-store-submission'
     | '/services/ios'
+    | '/lovable/email/queue/process'
   id:
     | '__root__'
     | '/'
@@ -134,6 +146,7 @@ export interface FileRouteTypes {
     | '/services/android'
     | '/services/app-store-submission'
     | '/services/ios'
+    | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -143,6 +156,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   ServicesRoute: typeof ServicesRouteWithChildren
+  LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -210,6 +224,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesAndroidRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/lovable/email/queue/process': {
+      id: '/lovable/email/queue/process'
+      path: '/lovable/email/queue/process'
+      fullPath: '/lovable/email/queue/process'
+      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -236,6 +257,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   ServicesRoute: ServicesRouteWithChildren,
+  LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
