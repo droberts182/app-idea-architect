@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "How long does App Store review take in 2026?",
-    a: "Apple has stringent compliancy rules for their applications. We have experience getting apps approved. Google Play Store's review process is fairly straightforward and much more simple. Ad-hoc distribution builds (outside of the App Store and Play Store) can be distributed immediately to phones / tablets.",
+    a: "Apple has stringent compliancy rules for their applications. We have experience getting apps approved. Google Play Store's review process is straightforward & simple. Ad-hoc distribution builds (outside of the App Store and Play Store) can be distributed immediately to phones / tablets.",
   },
   {
     q: "How much does it cost to develop a mobile app solution?",
