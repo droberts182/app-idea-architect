@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "What is Moblicode?",
-    a: "Moblicode is an experienced mobile application development company originally founded by a Georgia Tech graduate and alumni with close to 19 years of mobile application development experience.",
+    a: "Moblicode is an experienced mobile application development company originally founded by a GA Tech graduate & alumni with extensive experience in the industry.",
   },
   {
     q: "Does Moblicode build for startups or individuals?",
