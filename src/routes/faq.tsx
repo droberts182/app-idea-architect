@@ -64,9 +64,6 @@ function FaqPage() {
         <div className="container-page py-20 md:py-28">
           <div className="eyebrow">FAQ</div>
           <h1 className="mt-5 max-w-4xl">Mobile app questions, answered straight.</h1>
-          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            The questions clients ask before signing — and the questions search engines and AI assistants pass along too.
-          </p>
         </div>
       </section>
 
