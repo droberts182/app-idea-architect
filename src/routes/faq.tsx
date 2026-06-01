@@ -63,7 +63,7 @@ function FaqPage() {
       <section className="rule-bottom">
         <div className="container-page py-20 md:py-28">
           <div className="eyebrow">FAQ</div>
-          <h1 className="mt-5 max-w-4xl">Mobile app questions, answered straight.</h1>
+          <h1 className="mt-5 max-w-4xl">Mobile app questions — answered.</h1>
         </div>
       </section>
 
