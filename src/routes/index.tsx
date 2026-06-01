@@ -174,9 +174,6 @@ function HomePage() {
             <div>
               <div className="eyebrow">Every category</div>
               <h2 className="mt-4">We can build for any app category -- any business model.</h2>
-              <p className="mt-4 text-sm text-muted-foreground">
-                Twenty-six App Store categories. Plus the full range of Games sub-genres on Google Play. We don't pick a vertical — we pick clients we can ship for.
-              </p>
             </div>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-3">
               {SITE.categories.map((c) => (
