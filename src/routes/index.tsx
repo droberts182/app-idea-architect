@@ -194,7 +194,7 @@ function HomePage() {
         <div className="container-page py-20">
           <div className="eyebrow">Why Moblicode</div>
           <h2 className="mt-4 max-w-3xl">
-            We do the difficult parts of mobile so you don't have to learn them the hard way.
+            We architect & build mobile apps correctly -- from backend servers to a polished , visually pleasing User Interface.
           </h2>
         </div>
       </section>
