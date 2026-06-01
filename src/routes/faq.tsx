@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Does Moblicode build for startups or businesses?",
-    a: "We value our customers and are willing to work with your budget and timelines. We have done work for both large and small businesses.",
+    a: "We value our customers and want to work with your budget and timelines. We have done work for both large and small businesses.",
   },
 ] as const;
 
