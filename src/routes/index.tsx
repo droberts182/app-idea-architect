@@ -173,7 +173,7 @@ function HomePage() {
           <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
             <div>
               <div className="eyebrow">Every category</div>
-              <h2 className="mt-4">If it's on the App Store, we've shipped one.</h2>
+              <h2 className="mt-4">We can build for any app category -- any business model.</h2>
               <p className="mt-4 text-sm text-muted-foreground">
                 Twenty-six App Store categories. Plus the full range of Games sub-genres on Google Play. We don't pick a vertical — we pick clients we can ship for.
               </p>
