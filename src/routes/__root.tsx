@@ -131,6 +131,11 @@ function RootComponent() {
       <AnalyticsBoot />
       <div className="flex min-h-screen flex-col">
         <Header />
+        <div className="border-b border-border bg-muted/40">
+          <div className="container py-2 text-center text-xs sm:text-sm text-muted-foreground">
+            {SITE.pitch}
+          </div>
+        </div>
         <main className="flex-1">
           <Outlet />
         </main>
