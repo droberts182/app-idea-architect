@@ -18,7 +18,7 @@ const faqs = [
     a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. We will negotiate a price you are happy with. Contact us for pricing. Email support@moblicode.com or call 747-755-1281.",
   },
   {
-    q: "What are some expected timelines for app development work?",
+    q: "What are some expected timelines for app development?",
     a: "Contact us for timeline estimates. Timelines are based on functionality requirements and the complexity of the application. We aim for aggressive timelines for 100% customer satisfaction.",
   },
   {
