@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "How much does it cost to develop a mobile app solution?",
-    a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. The cost depends a lot on the timeline and complexity it will take to deliver the product. We aim for 100% customer satisfaction. Contact us for pricing.",
+    a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. We will negotiate a price you are happy with. We aim for 100% customer satisfaction. Contact us for pricing.",
   },
   {
     q: "What are some expected timelines for app development work?",
