@@ -41,7 +41,6 @@ export function Footer() {
         </div>
         <div className="rule-top mt-12 flex flex-col gap-3 pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {SITE.legalName}. All rights reserved.</p>
-          <p>US-based · iOS &amp; Android · Established {SITE.founded}</p>
         </div>
       </div>
     </footer>
