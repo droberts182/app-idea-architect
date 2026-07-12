@@ -95,14 +95,14 @@ function ServicesPage() {
         <div className="container-page py-20">
           <div className="eyebrow">Why mobile</div>
           <h2 className="mt-4 max-w-3xl">Reasons businesses have a mobile app</h2>
-          <div className="mt-10 grid gap-10">
+          <div className="mt-10 grid gap-8">
             {reasons.map((r, i) => (
-              <div key={r.title} className="rule-top grid gap-6 pt-8 md:grid-cols-[1fr_2fr]">
-                <div>
-                  <div className="eyebrow">{String(i + 1).padStart(2, "0")}</div>
-                  <h3 className="mt-3 text-foreground">{r.title}</h3>
+              <div key={r.title} className="grid gap-4 md:grid-cols-[1fr_2fr]">
+                <div className="flex items-baseline gap-3">
+                  <span className="font-display text-2xl text-accent">{String(i + 1).padStart(2, "0")}</span>
+                  <h3 className="text-foreground">{r.title}</h3>
                 </div>
-                <ul className="space-y-3 text-base leading-relaxed text-foreground/85">
+                <ul className="space-y-2 text-base leading-relaxed text-foreground/85">
                   {r.points.map((p) => (
                     <li key={p} className="flex gap-3">
                       <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
@@ -113,6 +113,7 @@ function ServicesPage() {
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
