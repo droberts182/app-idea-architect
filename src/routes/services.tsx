@@ -94,7 +94,7 @@ function ServicesPage() {
       <section className="rule-top">
         <div className="container-page py-20">
           <div className="eyebrow">Why mobile</div>
-          <h2 className="mt-4 max-w-3xl">Reasons businesses have a mobile app</h2>
+          <h2 className="mt-4 max-w-3xl">Reasons businesses want a mobile app</h2>
           <div className="mt-10 grid gap-8">
             {reasons.map((r, i) => (
               <div key={r.title} className="grid gap-4 md:grid-cols-[1fr_2fr]">
