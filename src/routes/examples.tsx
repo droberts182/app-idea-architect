@@ -23,7 +23,7 @@ type Example = {
   platform: "iOS" | "Android";
   category: string;
   blurb: string;
-  image: string;
+  images: string[];
 };
 
 const iosExamples: Example[] = [
@@ -31,15 +31,8 @@ const iosExamples: Example[] = [
     name: "Launch to Wellness",
     platform: "iOS",
     category: "Health & Wellness",
-    blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, and support contact — all wrapped in a calm, image-forward interface.",
-    image: launchToWellnessIos.url,
-  },
-  {
-    name: "Launch to Wellness — Meet The Team",
-    platform: "iOS",
-    category: "Health & Wellness",
-    blurb: "Team directory screen featuring clinician headshots, quick-dial contact, and tab-based navigation across Team, Info, Forum, Guide, and Contact sections.",
-    image: launchToWellnessIos2.url,
+    blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, team directory, and support contact — all wrapped in a calm, image-forward interface.",
+    images: [launchToWellnessIos.url, launchToWellnessIos2.url],
   },
 ];
 
@@ -80,22 +73,25 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
             <h2 className="mt-3">{title}</h2>
           </div>
         </div>
-        <div className="mt-10 grid gap-10 sm:grid-cols-2">
+        <div className="mt-10 space-y-16">
           {items.map((ex) => (
-            <article key={ex.name} className="group">
-              <div className="flex items-center justify-center overflow-hidden rounded-lg bg-muted/40 transition-transform group-hover:-translate-y-1">
-                <img
-                  src={ex.image}
-                  alt={`${ex.name} — ${ex.platform} app built by Moblicode`}
-                  loading="lazy"
-                  className="h-auto w-full max-w-[360px]"
-                />
-              </div>
-
-              <div className="mt-5">
+            <article key={ex.name}>
+              <div className="max-w-3xl">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{ex.platform} · {ex.category}</div>
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
+              </div>
+              <div className="mt-8 flex flex-wrap items-start justify-center gap-6 sm:justify-start">
+                {ex.images.map((src, i) => (
+                  <div key={i} className="flex items-center justify-center overflow-hidden rounded-lg bg-muted/40">
+                    <img
+                      src={src}
+                      alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
+                      loading="lazy"
+                      className="h-auto w-full max-w-[240px]"
+                    />
+                  </div>
+                ))}
               </div>
             </article>
           ))}
