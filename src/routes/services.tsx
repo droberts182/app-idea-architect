@@ -102,14 +102,15 @@ function ServicesPage() {
                   <span className="font-display text-2xl text-accent">{String(i + 1).padStart(2, "0")}</span>
                   <h3 className="text-foreground">{r.title}</h3>
                 </div>
-                <ul className="space-y-1.5 text-sm leading-snug text-foreground/75">
+                <ul className="space-y-1 text-xs leading-snug text-foreground/70">
                   {r.points.map((p) => (
                     <li key={p} className="flex gap-2">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                      <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-accent" />
                       <span>{p}</span>
                     </li>
                   ))}
                 </ul>
+
               </div>
             ))}
           </div>
