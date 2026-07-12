@@ -75,16 +75,15 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
         <div className="mt-10 grid gap-10 sm:grid-cols-2">
           {items.map((ex) => (
             <article key={ex.name} className="group">
-              <div className="flex items-center justify-center overflow-hidden rounded-lg bg-muted/40 py-8 transition-transform group-hover:-translate-y-1">
+              <div className="flex items-center justify-center overflow-hidden rounded-lg bg-muted/40 transition-transform group-hover:-translate-y-1">
                 <img
                   src={ex.image}
                   alt={`${ex.name} — ${ex.platform} app built by Moblicode`}
-                  width={1024}
-                  height={1024}
                   loading="lazy"
-                  className="w-1/2 max-w-[240px]"
+                  className="h-auto w-full max-w-[360px]"
                 />
               </div>
+
               <div className="mt-5">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{ex.platform} · {ex.category}</div>
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
