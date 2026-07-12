@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as UnsubscribeRouteImport } from './routes/unsubscribe'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ExamplesRouteImport } from './routes/examples'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AnswersRouteImport } from './routes/answers'
 import { Route as AboutRouteImport } from './routes/about'
@@ -39,6 +40,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExamplesRoute = ExamplesRouteImport.update({
+  id: '/examples',
+  path: '/examples',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -116,6 +122,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/answers': typeof AnswersRoute
   '/contact': typeof ContactRoute
+  '/examples': typeof ExamplesRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/unsubscribe': typeof UnsubscribeRoute
@@ -134,6 +141,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/answers': typeof AnswersRoute
   '/contact': typeof ContactRoute
+  '/examples': typeof ExamplesRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/unsubscribe': typeof UnsubscribeRoute
@@ -153,6 +161,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/answers': typeof AnswersRoute
   '/contact': typeof ContactRoute
+  '/examples': typeof ExamplesRoute
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/unsubscribe': typeof UnsubscribeRoute
@@ -173,6 +182,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/answers'
     | '/contact'
+    | '/examples'
     | '/faq'
     | '/services'
     | '/unsubscribe'
@@ -191,6 +201,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/answers'
     | '/contact'
+    | '/examples'
     | '/faq'
     | '/services'
     | '/unsubscribe'
@@ -209,6 +220,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/answers'
     | '/contact'
+    | '/examples'
     | '/faq'
     | '/services'
     | '/unsubscribe'
@@ -228,6 +240,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AnswersRoute: typeof AnswersRoute
   ContactRoute: typeof ContactRoute
+  ExamplesRoute: typeof ExamplesRoute
   FaqRoute: typeof FaqRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   UnsubscribeRoute: typeof UnsubscribeRoute
@@ -260,6 +273,13 @@ declare module '@tanstack/react-router' {
       path: '/faq'
       fullPath: '/faq'
       preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/examples': {
+      id: '/examples'
+      path: '/examples'
+      fullPath: '/examples'
+      preLoaderRoute: typeof ExamplesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -377,6 +397,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AnswersRoute: AnswersRoute,
   ContactRoute: ContactRoute,
+  ExamplesRoute: ExamplesRoute,
   FaqRoute: FaqRoute,
   ServicesRoute: ServicesRouteWithChildren,
   UnsubscribeRoute: UnsubscribeRoute,
