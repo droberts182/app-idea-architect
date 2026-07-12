@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import launchToWellnessIos from "@/assets/launch-to-wellness-ios.jpg.asset.json";
+import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
