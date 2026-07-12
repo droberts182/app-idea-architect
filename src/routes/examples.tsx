@@ -53,8 +53,9 @@ function ExamplesPage() {
         </div>
       </section>
 
-      <ExampleSection title="iOS" eyebrow="iPhone &amp; iPad" items={iosExamples} />
-      <ExampleSection title="Android" eyebrow="Phone &amp; Tablet" items={androidExamples} />
+      {iosExamples.length > 0 && <ExampleSection title="iOS" eyebrow="iPhone &amp; iPad" items={iosExamples} />}
+      {androidExamples.length > 0 && <ExampleSection title="Android" eyebrow="Phone &amp; Tablet" items={androidExamples} />}
+
 
       <CTABand />
     </>
