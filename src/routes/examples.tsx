@@ -1,10 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import iphoneMockup from "@/assets/iphone-ios-mockup.png";
-import iphoneMockupLeft from "@/assets/iphone-ios-mockup-left.png";
-import androidMockup from "@/assets/android-mockup.png";
-import androidMockupLeft from "@/assets/android-mockup-left.png";
+import launchToWellnessIos from "@/assets/launch-to-wellness-ios.jpg.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
@@ -30,37 +27,16 @@ type Example = {
 
 const iosExamples: Example[] = [
   {
-    name: "Field Service Companion",
+    name: "Launch to Wellness",
     platform: "iOS",
-    category: "Business / Productivity",
-    blurb: "Native SwiftUI app for on-site technicians — offline job queue, photo capture, and signature capture syncing to a Postgres backend.",
-    image: iphoneMockup,
-  },
-  {
-    name: "Habit Streaks",
-    platform: "iOS",
-    category: "Health & Fitness",
-    blurb: "Lightweight habit tracker with Live Activities, Widgets, and HealthKit integration. Built in Swift with a SwiftData local store.",
-    image: iphoneMockupLeft,
+    category: "Health & Wellness",
+    blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, and support contact — all wrapped in a calm, image-forward interface.",
+    image: launchToWellnessIos.url,
   },
 ];
 
-const androidExamples: Example[] = [
-  {
-    name: "Retail Inventory Scanner",
-    platform: "Android",
-    category: "Business / Retail",
-    blurb: "Kotlin + Jetpack Compose app running on rugged Android handhelds — barcode scanning, real-time stock sync, and role-based access.",
-    image: androidMockup,
-  },
-  {
-    name: "Neighborhood Delivery",
-    platform: "Android",
-    category: "Food & Delivery",
-    blurb: "Consumer-facing Android app with map-based order tracking, push notifications, and Stripe checkout. Distributed via Google Play.",
-    image: androidMockupLeft,
-  },
-];
+const androidExamples: Example[] = [];
+
 
 function ExamplesPage() {
   return (
