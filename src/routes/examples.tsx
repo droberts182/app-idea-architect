@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
+import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
@@ -32,6 +33,13 @@ const iosExamples: Example[] = [
     category: "Health & Wellness",
     blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, and support contact — all wrapped in a calm, image-forward interface.",
     image: launchToWellnessIos.url,
+  },
+  {
+    name: "Launch to Wellness — Meet The Team",
+    platform: "iOS",
+    category: "Health & Wellness",
+    blurb: "Team directory screen featuring clinician headshots, quick-dial contact, and tab-based navigation across Team, Info, Forum, Guide, and Contact sections.",
+    image: launchToWellnessIos2.url,
   },
 ];
 
