@@ -22,7 +22,7 @@ const services = [
     to: "/contact",
     eyebrow: "Database",
     title: "Database design",
-    blurb: "Middle-tier APIs & databases that tie into mobile applications we develop.",
+    blurb: "We design and build robust, scalable databases and middle-tier APIs that power the mobile applications we develop — ensuring fast, secure, and reliable data handling. A well-architected backend is the foundation of any successful mobile app. We create systems that seamlessly connect your iOS and Android apps to the data and services they need.",
     keywords: ["database development", "backend development", "API development"],
   },
   {
