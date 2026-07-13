@@ -4,6 +4,7 @@ import { CTABand } from "@/components/site/CTABand";
 import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
 import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
 import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.json";
+import rfxIphone1 from "@/assets/rfx-iphone-1.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
@@ -40,7 +41,7 @@ const iosExamples: Example[] = [
     platform: "iOS",
     category: "Sports & Recruiting",
     blurb: "A soccer recruiting platform connecting high-school athletes with college coaches, built and owned end-to-end across mobile, web, backend, and infrastructure.\n• Architected native iOS (Swift/SwiftUI) and Android (Kotlin/Jetpack Compose) apps, plus a Flutter web admin portal and a React/Vite club dashboard.\n• Built a NestJS/TypeScript backend on PostgreSQL (Sequelize) with JWT auth and REST APIs, deployed on DigitalOcean and Vercel; developed the database from the ground up.\n• Designed an automated, round-based outreach engine emailing thousands of college coaches via Postmark, with per-coach/gender rate limits, NCAA contact-window rules, and division targeting.\n• Implemented subscription monetization (RevenueCat) with tiered/gated features, live YouTube highlight validation, and profile-completeness gating.",
-    images: [],
+    images: [rfxIphone1.url],
   },
 ];
 
