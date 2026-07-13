@@ -89,15 +89,19 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
                 <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
               <div className="mt-8 flex flex-nowrap items-end justify-center gap-6 sm:justify-start overflow-x-auto">
-                {ex.images.map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
-                    loading="lazy"
-                    className="h-[360px] w-auto object-contain flex-shrink-0"
-                  />
-                ))}
+                {ex.images.map((img, i) => {
+                  const src = typeof img === "string" ? img : img.src;
+                  const heightClass = typeof img === "string" ? "h-[360px]" : (img.heightClass ?? "h-[360px]");
+                  return (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
+                      loading="lazy"
+                      className={`${heightClass} w-auto object-contain flex-shrink-0`}
+                    />
+                  );
+                })}
               </div>
             </article>
           ))}
