@@ -67,12 +67,8 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
   return (
     <section className="rule-bottom">
       <div className="container-page py-16 md:py-20">
-        <div className="grid gap-4 md:grid-cols-[1fr_2fr] md:items-end">
-          <div>
-            <div className="eyebrow" dangerouslySetInnerHTML={{ __html: eyebrow }} />
-            <h2 className="mt-3">{title}</h2>
-          </div>
-        </div>
+        <div className="eyebrow" dangerouslySetInnerHTML={{ __html: eyebrow }} />
+        <h2 className="mt-3">{title}</h2>
         <div className="mt-10 space-y-16">
           {items.map((ex) => (
             <article key={ex.name}>
@@ -83,14 +79,13 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
               </div>
               <div className="mt-8 flex flex-wrap items-start justify-center gap-6 sm:justify-start">
                 {ex.images.map((src, i) => (
-                  <div key={i} className="flex items-center justify-center overflow-hidden rounded-lg bg-muted/40">
-                    <img
-                      src={src}
-                      alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
-                      loading="lazy"
-                      className="h-auto w-full max-w-[240px]"
-                    />
-                  </div>
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
+                    loading="lazy"
+                    className="h-auto w-full max-w-[180px]"
+                  />
                 ))}
               </div>
             </article>
