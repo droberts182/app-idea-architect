@@ -27,7 +27,7 @@ type Example = {
   platform: "iOS" | "Android";
   category: string;
   blurb: string;
-  images: string[];
+  images: (string | { src: string; heightClass?: string })[];
 };
 
 const iosExamples: Example[] = [
@@ -36,7 +36,7 @@ const iosExamples: Example[] = [
     platform: "iOS",
     category: "Health & Wellness",
     blurb: "iOS & Android mental-health support app connecting clients with therapeutic resources and each other.\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n• Developed a forum feature enabling clients to connect with and support one another.\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url, launchToWellnessIos3.url],
+    images: [launchToWellnessIos.url, launchToWellnessIos2.url, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
   },
   {
     name: "RFX — RecruitFluency",
@@ -89,15 +89,19 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
                 <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
               <div className="mt-8 flex flex-nowrap items-end justify-center gap-6 sm:justify-start overflow-x-auto">
-                {ex.images.map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
-                    loading="lazy"
-                    className="h-[360px] w-auto object-contain flex-shrink-0"
-                  />
-                ))}
+                {ex.images.map((img, i) => {
+                  const src = typeof img === "string" ? img : img.src;
+                  const heightClass = typeof img === "string" ? "h-[360px]" : (img.heightClass ?? "h-[360px]");
+                  return (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
+                      loading="lazy"
+                      className={`${heightClass} w-auto object-contain flex-shrink-0`}
+                    />
+                  );
+                })}
               </div>
             </article>
           ))}
