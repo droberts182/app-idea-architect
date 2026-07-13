@@ -68,12 +68,6 @@ function AboutPage() {
               </div>
             ))}
           </div>
-          <div className="mt-12 max-w-3xl rule-top pt-6">
-            <h3 className="text-foreground">Ready to bring your vision to life?</h3>
-            <p className="mt-2 text-muted-foreground">
-              We partner with you every step of the way to turn your idea into a successful, market-leading mobile app or game.
-            </p>
-          </div>
         </div>
       </section>
 
