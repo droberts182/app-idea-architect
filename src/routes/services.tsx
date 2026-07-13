@@ -15,7 +15,7 @@ const services = [
     to: "/services/android",
     eyebrow: "Android",
     title: "Android app development",
-    blurb: "Android (Phone / Tablet) applications built for the next generation of apps.",
+    blurb: "Android (Phone / Tablet) applications built for the next generation of apps. Native Android development using Kotlin and Jetpack Compose for clean architecture, beautiful UIs, and excellent performance. UI/UX design, backend integration (Firebase, REST APIs, etc.), push notifications, in-app purchases, subscriptions, analytics, and Google Play optimization.",
     keywords: ["android app development company", "custom mobile app development"],
   },
   {
