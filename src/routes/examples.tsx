@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
 import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
+import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
