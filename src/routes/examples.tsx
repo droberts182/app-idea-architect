@@ -36,7 +36,7 @@ const iosExamples: Example[] = [
     platform: "iOS",
     category: "Health & Wellness",
     blurb: "iOS & Android mental-health support app connecting clients with therapeutic resources and each other.\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n• Developed a forum feature enabling clients to connect with and support one another.\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url, launchToWellnessIos3.url],
+    images: [launchToWellnessIos.url, launchToWellnessIos2.url, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
   },
   {
     name: "RFX — RecruitFluency",
