@@ -78,14 +78,14 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
-              <div className="mt-8 flex flex-wrap items-start justify-center gap-6 sm:justify-start">
+              <div className="mt-8 flex flex-nowrap items-end justify-center gap-6 sm:justify-start overflow-x-auto">
                 {ex.images.map((src, i) => (
                   <img
                     key={i}
                     src={src}
                     alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
                     loading="lazy"
-                    className="h-auto w-full max-w-[180px]"
+                    className="h-[360px] w-auto object-contain flex-shrink-0"
                   />
                 ))}
               </div>
