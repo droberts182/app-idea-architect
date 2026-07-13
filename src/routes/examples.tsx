@@ -57,7 +57,7 @@ function ExamplesPage() {
         <div className="container-page py-20 md:py-28">
           <div className="eyebrow">Examples</div>
           <h1 className="mt-5 max-w-4xl">
-            A selection of iOS &amp; Android apps we've <em className="font-display italic text-accent">shipped</em>.
+            Examples of iOS &amp; Android apps we've <em className="font-display italic text-accent">built</em>.
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
             {SITE.pitch}
