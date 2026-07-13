@@ -33,7 +33,7 @@ function HomePage() {
               Mobile App &amp; Game solutions to fit <em className="font-display italic text-accent">any project</em>.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Moblicode builds iOS &amp; Android (Apps and Games) for every category of the iOS App Store &amp; Google Play Store — our engineers have extensive and industry relevant experience building creative, polished applications utilizing any framework -- iOS (iPhone/iPad) or Android (Phone/Tablet).
+              Moblicode builds high-quality iOS and Android apps and games for every category on the App Store and Google Play. Our experienced engineers deliver creative, polished solutions using native frameworks — SwiftUI &amp; Kotlin for iPhone, iPad, Android phones, and tablets.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
