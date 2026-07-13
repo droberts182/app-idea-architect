@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
 import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
+import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
@@ -32,7 +33,7 @@ const iosExamples: Example[] = [
     platform: "iOS",
     category: "Health & Wellness",
     blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, team directory, and support contact — all wrapped in a calm, image-forward interface.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url],
+    images: [launchToWellnessIos.url, launchToWellnessIos2.url, launchToWellnessIos3.url],
   },
 ];
 
