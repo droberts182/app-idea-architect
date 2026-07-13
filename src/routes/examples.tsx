@@ -33,7 +33,7 @@ const iosExamples: Example[] = [
     platform: "iOS",
     category: "Health & Wellness",
     blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, team directory, and support contact — all wrapped in a calm, image-forward interface.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url],
+    images: [launchToWellnessIos.url, launchToWellnessIos2.url, launchToWellnessIos3.url],
   },
 ];
 
