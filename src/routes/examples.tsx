@@ -32,7 +32,7 @@ const iosExamples: Example[] = [
     name: "Launch to Wellness",
     platform: "iOS",
     category: "Health & Wellness",
-    blurb: "Native iOS mindfulness guide with an in-app conversational assistant, resource library, community forum, team directory, and support contact — all wrapped in a calm, image-forward interface.",
+    blurb: "Native iOS mental-health support app connecting clients with therapeutic resources and each other.\n\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n\n• Developed a forum feature enabling clients to connect with and support one another.\n\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
     images: [launchToWellnessIos.url, launchToWellnessIos2.url, launchToWellnessIos3.url],
   },
 ];
@@ -76,7 +76,7 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
               <div className="max-w-3xl">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{ex.platform} · {ex.category}</div>
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
+                <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
               <div className="mt-8 flex flex-nowrap items-end justify-center gap-6 sm:justify-start overflow-x-auto">
                 {ex.images.map((src, i) => (
