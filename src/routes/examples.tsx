@@ -76,7 +76,7 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
               <div className="max-w-3xl">
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{ex.platform} · {ex.category}</div>
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
+                <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
               <div className="mt-8 flex flex-nowrap items-end justify-center gap-6 sm:justify-start overflow-x-auto">
                 {ex.images.map((src, i) => (
