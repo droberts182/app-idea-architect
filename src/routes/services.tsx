@@ -29,7 +29,7 @@ const services = [
     to: "/services/app-store-submission",
     eyebrow: "Distribution",
     title: "iOS (App Store) & Android (Play Store) distribution and ad-hoc (in house) distribution",
-    blurb: "Release your app through the iOS (App Store) & Android (Play Store) or distribute your mobile app in house (ad-hoc distribution).",
+    blurb: "We handle the complete distribution process for your mobile apps — whether you want to release publicly on the Apple App Store and Google Play Store, or distribute privately within your organization through ad-hoc / in-house distribution. Ad-hoc distribution (also called in-house or enterprise distribution) allows you to install your app directly on specific devices without going through the public App Store or Play Store.",
     keywords: ["app store submission service", "ad hoc app distribution", "in house app distribution"],
   },
 ] as const;
