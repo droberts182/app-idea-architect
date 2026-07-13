@@ -78,8 +78,6 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
   return (
     <section className="rule-bottom">
       <div className="container-page py-16 md:py-20">
-        <div className="eyebrow" dangerouslySetInnerHTML={{ __html: eyebrow }} />
-        <h2 className="mt-3">{title}</h2>
         <div className="mt-10 space-y-16">
           {items.map((ex) => (
             <article key={ex.name}>
