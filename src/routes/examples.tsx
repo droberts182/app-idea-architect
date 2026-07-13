@@ -77,8 +77,8 @@ function ExamplesPage() {
 function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: string; items: Example[] }) {
   return (
     <section className="rule-bottom">
-      <div className="container-page py-16 md:py-20">
-        <div className="mt-10 space-y-16">
+      <div className="container-page pt-4 pb-16 md:pt-6 md:pb-20">
+        <div className="space-y-16">
           {items.map((ex) => (
             <article key={ex.name}>
               <div className="max-w-3xl">
