@@ -24,7 +24,7 @@ export const Route = createFileRoute("/examples")({
 
 type Example = {
   name: string;
-  platform: "iOS" | "Android";
+  platform: string;
   category: string;
   blurb: string;
   images: (string | { src: string; heightClass?: string })[];
@@ -33,14 +33,14 @@ type Example = {
 const iosExamples: Example[] = [
   {
     name: "Launch to Wellness",
-    platform: "iOS",
+    platform: "iOS & Android",
     category: "Health & Wellness",
     blurb: "iOS & Android mental-health support app connecting clients with therapeutic resources and each other.\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n• Developed a forum feature enabling clients to connect with and support one another.\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
     images: [launchToWellnessIos.url, launchToWellnessIos2.url, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
   },
   {
     name: "RFX — RecruitFluency",
-    platform: "iOS",
+    platform: "iOS & Android",
     category: "Sports & Recruiting",
     blurb: "A soccer recruiting platform connecting high-school athletes with college coaches, built and owned end-to-end across mobile, web, backend, and infrastructure.\n• Architected native iOS (Swift/SwiftUI) and Android (Kotlin/Jetpack Compose) apps, plus a Flutter web admin portal and a React/Vite club dashboard.\n• Built a NestJS/TypeScript backend on PostgreSQL (Sequelize) with JWT auth and REST APIs, deployed on DigitalOcean and Vercel; developed the database from the ground up.\n• Designed an automated, round-based outreach engine emailing thousands of college coaches via Postmark, with per-coach/gender rate limits, NCAA contact-window rules, and division targeting.\n• Implemented subscription monetization (RevenueCat) with tiered/gated features, live YouTube highlight validation, and profile-completeness gating.",
     images: [rfxIphone1.url, rfxIphone2.url, rfxIphone3.url],
