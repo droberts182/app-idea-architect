@@ -24,7 +24,7 @@ export const Route = createFileRoute("/examples")({
 
 type Example = {
   name: string;
-  platform: "iOS" | "Android";
+  platform: string;
   category: string;
   blurb: string;
   images: (string | { src: string; heightClass?: string })[];
