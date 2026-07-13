@@ -27,7 +27,7 @@ type Example = {
   platform: "iOS" | "Android";
   category: string;
   blurb: string;
-  images: string[];
+  images: (string | { src: string; heightClass?: string })[];
 };
 
 const iosExamples: Example[] = [
