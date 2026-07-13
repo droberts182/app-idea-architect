@@ -191,8 +191,27 @@ function HomePage() {
         <div className="container-page py-20">
           <div className="eyebrow">Why Moblicode</div>
           <h2 className="mt-4 max-w-3xl">
-            We architect & build mobile apps correct -- from backend servers to a polished , visually pleasing User Interface.
+            We architect and build premium iOS &amp; Android apps the right way — from powerful, scalable backend systems to beautiful, intuitive user interfaces that drive <em className="font-display italic text-accent">results</em>.
           </h2>
+          <div className="mt-10 grid gap-8 md:grid-cols-[1fr_2fr]">
+            <div>
+              <div className="text-sm uppercase tracking-wider text-muted-foreground">What sets us apart</div>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              {[
+                { t: "End-to-End Expertise", d: "Full-stack development from backend servers and APIs to polished, high-performance front-end experiences." },
+                { t: "Native Excellence", d: "Expert-level SwiftUI for iOS and Kotlin / Jetpack Compose for Android." },
+                { t: "Business-Focused Solutions", d: "Apps built to solve real problems, delight users, and grow your revenue." },
+                { t: "Proven Quality", d: "Clean architecture, rigorous testing, and App Store / Google Play optimization for maximum success." },
+                { t: "Fast & Reliable Delivery", d: "Experienced team committed to on-time launches and long-term support." },
+              ].map((c) => (
+                <div key={c.t} className="rule-top pt-5">
+                  <h3 className="text-foreground">{c.t}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
