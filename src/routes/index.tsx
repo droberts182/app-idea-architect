@@ -57,7 +57,7 @@ function HomePage() {
         <div className="container-page grid gap-12 py-20 md:grid-cols-[1fr_2fr]">
           <div>
             <div className="eyebrow">What we do</div>
-            <h2 className="mt-4">Mobile apps built to fit any business need -- our apps can meet your customer demands. We also build innovative and cutting edge mobile games.</h2>
+            <h2 className="mt-4">Our mobile apps are built to align with your business objectives and deliver exceptional user experiences. We also develop innovative and high-performance mobile games that stand out in the market.</h2>
           </div>
           <div className="grid gap-8 sm:grid-cols-2">
             {[
