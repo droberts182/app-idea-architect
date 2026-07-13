@@ -48,8 +48,35 @@ function AboutPage() {
         <div className="container-page py-20">
           <div className="eyebrow">How we work</div>
           <h2 className="mt-4 max-w-3xl">A professional mobile development company that delivers quality that customers expect.</h2>
+          <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+            At Moblicode, we don't just build apps — we deliver high-performing mobile solutions that help your business stand out, engage customers, and grow revenue.
+          </p>
+          <p className="mt-4 max-w-3xl text-muted-foreground">
+            Our proven process ensures you get the quality, speed, and results you expect from a top-tier development partner:
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            {[
+              { t: "Discovery & Strategy", d: "We dive deep into your business goals to design a custom solution that drives real ROI." },
+              { t: "Stunning UI/UX Design", d: "We create beautiful, intuitive interfaces that captivate users and boost conversions." },
+              { t: "Expert Agile Development", d: "Built with clean, scalable code using the latest native technologies (SwiftUI & Kotlin) for fast, reliable performance." },
+              { t: "Flawless Testing & Launch", d: "Rigorous QA and optimization guarantee a smooth launch on the App Store and Google Play." },
+              { t: "Post-Launch Growth", d: "Ongoing support, analytics, and updates to keep your app competitive and continuously improving." },
+            ].map((c) => (
+              <div key={c.t} className="rule-top pt-5">
+                <h3 className="text-foreground">{c.t}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 max-w-3xl rule-top pt-6">
+            <h3 className="text-foreground">Ready to bring your vision to life?</h3>
+            <p className="mt-2 text-muted-foreground">
+              We partner with you every step of the way to turn your idea into a successful, market-leading mobile app or game.
+            </p>
+          </div>
         </div>
       </section>
+
 
       <CTABand />
     </>
