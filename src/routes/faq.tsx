@@ -83,7 +83,7 @@ function FaqPage() {
 
       <section>
         <div className="container-page py-16">
-          <Accordion type="single" collapsible className="mx-auto max-w-3xl">
+          <Accordion type="single" collapsible className="max-w-3xl">
             {faqs.map((f, i) => (
               <AccordionItem key={f.q} value={`item-${i}`}>
                 <AccordionTrigger className="text-left text-lg font-medium text-foreground" style={{ fontFamily: "var(--font-sans)" }}>
