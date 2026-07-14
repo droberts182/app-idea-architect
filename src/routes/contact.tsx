@@ -140,14 +140,15 @@ function ContactPage() {
               </ul>
             </div>
             <div>
-              <div className="eyebrow">What happens next</div>
-              <ol className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li>1. We read your inquiry within one business day.</li>
-                <li>2. We reply with a few clarifying questions, or a phone call.</li>
-                <li>3. You get a fixed estimate, timeline, and engagement terms.</li>
-                <li>4. We work with our customers on being 100% satisfied.</li>
-              </ol>
+              <div className="eyebrow">What Happens Next?</div>
+              <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
+                <li><span className="font-medium text-foreground">We review your inquiry</span> — Usually within one business day.</li>
+                <li><span className="font-medium text-foreground">We get back to you</span> — With clarifying questions or to schedule a quick call.</li>
+                <li><span className="font-medium text-foreground">You receive a proposal</span> — Including a fixed-price estimate, timeline, and clear engagement terms.</li>
+                <li><span className="font-medium text-foreground">We get to work</span> — Collaborating closely with you to deliver an app you're 100% satisfied with.</li>
+              </ul>
             </div>
+
           </aside>
         </div>
       </section>
