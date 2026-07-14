@@ -35,6 +35,14 @@ const faqs = [
     q: "Does Moblicode build for startups or businesses?",
     a: "Yes — we work with both startups and established businesses of all sizes.\n\nFrom early-stage startups needing fast MVPs to scale efficiently, to larger companies requiring robust, enterprise-grade features and integrations, we deliver tailored mobile solutions that fit your goals and resources.\n\nOur flexible approach means we can adapt to different budgets, timelines, and project scopes while maintaining high quality.",
   },
+  {
+    q: "Do you sign NDAs?",
+    a: "Absolutely. We are happy to sign a Non-Disclosure Agreement (NDA) before discussing project details. Your ideas and intellectual property are fully protected.",
+  },
+  {
+    q: "What technologies and tools do you use?",
+    a: "We primarily use modern native technologies:\n\niOS: SwiftUI, Swift, Xcode\n\nAndroid: Kotlin, Jetpack Compose\n\nBackend: Firebase, Node.js, NestJS, DigitalOcean, and PostgreSQL\n\nWe choose the right stack based on your performance, scalability, budget, and long-term maintenance needs.",
+  },
 ] as const;
 
 export const Route = createFileRoute("/faq")({
