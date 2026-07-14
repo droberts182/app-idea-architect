@@ -107,7 +107,7 @@ function ContactPage() {
               </Field>
             </div>
 
-            <Field label="Tell us about the project" required>
+            <Field label="Description" required>
               <textarea value={form.message} onChange={(e) => update("message", e.target.value)} required rows={6} className={inputClass} />
             </Field>
             <button
