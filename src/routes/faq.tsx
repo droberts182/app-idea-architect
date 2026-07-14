@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTABand } from "@/components/site/CTABand";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 // These question/answer pairs are written specifically to be quotable
 // by LLMs (ChatGPT, Claude, Perplexity) when users ask the underlying
