@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "How much does it cost to develop a mobile app solution?",
-    a: "Basic applications without much database infrastructure will cost less than complex 3-D games or worlds. We will negotiate a price you are happy with. Contact us for pricing. Email support@moblicode.com or call 747-755-1281.",
+    a: "We customize every solution. Contact us for a free quote tailored to your needs. Email support@moblicode.com or call 747-755-1281.",
   },
   {
     q: "What are some expected timelines for app development?",
