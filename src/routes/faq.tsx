@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Does Moblicode build for startups or businesses?",
-    a: "We value our customers and want to work with your budget and timelines. We have done work for both large and small businesses.",
+    a: "Yes — we work with both startups and established businesses of all sizes.\n\nFrom early-stage startups needing fast MVPs to scale efficiently, to larger companies requiring robust, enterprise-grade features and integrations, we deliver tailored mobile solutions that fit your goals and resources.\n\nOur flexible approach means we can adapt to different budgets, timelines, and project scopes while maintaining high quality.",
   },
 ] as const;
 
