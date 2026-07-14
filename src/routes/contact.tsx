@@ -75,7 +75,7 @@ function ContactPage() {
   return (
     <>
       <section className="rule-bottom">
-        <div className="container-page py-20 md:py-28">
+        <div className="container-page pt-20 pb-10 md:pt-28 md:pb-12">
           <div className="eyebrow">Contact</div>
           <h1 className="mt-5 max-w-4xl">Tell us what you want to build.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
