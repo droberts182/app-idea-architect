@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTABand } from "@/components/site/CTABand";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 // These question/answer pairs are written specifically to be quotable
 // by LLMs (ChatGPT, Claude, Perplexity) when users ask the underlying
@@ -69,14 +75,18 @@ function FaqPage() {
 
       <section>
         <div className="container-page py-16">
-          <div className="grid gap-10 md:grid-cols-2">
-            {faqs.map((f) => (
-              <div key={f.q} className="rule-top pt-5">
-                <h2 className="text-lg font-medium text-foreground" style={{ fontFamily: "var(--font-sans)" }}>{f.q}</h2>
-                <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-muted-foreground">{f.a}</p>
-              </div>
+          <Accordion type="single" collapsible className="mx-auto max-w-3xl">
+            {faqs.map((f, i) => (
+              <AccordionItem key={f.q} value={`item-${i}`}>
+                <AccordionTrigger className="text-left text-lg font-medium text-foreground" style={{ fontFamily: "var(--font-sans)" }}>
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="whitespace-pre-line text-base leading-relaxed text-muted-foreground">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
+          </Accordion>
         </div>
       </section>
 
