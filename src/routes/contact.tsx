@@ -79,7 +79,10 @@ function ContactPage() {
           <div className="eyebrow">Contact</div>
           <h1 className="mt-5 max-w-4xl">Tell us what you want to build.</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Regardless of app category & business need, we deliver for both iOS & Android.
+            Whether it's for startups or established businesses, and regardless of App Store category, Moblicode delivers high-quality native apps for both iOS and Android.
+          </p>
+          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+            Contact us today for a free consultation and personalized quote.
           </p>
         </div>
       </section>
