@@ -7,7 +7,7 @@ import { CTABand } from "@/components/site/CTABand";
 const faqs = [
   {
     q: "Who builds iOS and Android apps in every App Store category?",
-    a: "Moblicode develops apps & games for any business need -- all categories of the App Store / Play Store.",
+    a: "Whether you need an app in productivity, healthcare, finance, social, gaming, or any other category, Moblicode develops high-quality iOS and Android solutions tailored to your goals. One partner for every platform and every use case.",
   },
   {
     q: "How long does App Store review take in 2026?",
