@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "How long does App Store review take in 2026?",
-    a: "Apple has stringent compliancy rules for their applications. We have experience getting apps approved. Google Play Store's review process is straightforward & simple. Ad-hoc distribution builds (outside of the App Store and Play Store) can be distributed immediately to phones / tablets.",
+    a: "Apple's review process is thorough and can take 24–72 hours on average in 2026, though first-time apps or those with complex features may take longer. We have extensive experience navigating Apple's strict guidelines to maximize approval chances on the first submission.\n\nGoogle Play's review is generally faster and more straightforward — typically a few hours to a few days.\n\nFor faster testing and launches, we provide ad-hoc distribution builds (iOS) and internal testing tracks (Android) that can be installed immediately on phones and tablets, bypassing public store review.",
   },
   {
     q: "How much does it cost to develop a mobile app solution?",
