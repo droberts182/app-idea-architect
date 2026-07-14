@@ -73,7 +73,7 @@ function FaqPage() {
             {faqs.map((f) => (
               <div key={f.q} className="rule-top pt-5">
                 <h2 className="text-lg font-medium text-foreground" style={{ fontFamily: "var(--font-sans)" }}>{f.q}</h2>
-                <p className="mt-3 text-base leading-relaxed text-muted-foreground">{f.a}</p>
+                <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-muted-foreground">{f.a}</p>
               </div>
             ))}
           </div>
