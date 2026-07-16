@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "sdk_version": "0.22.2",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "moblicode-mcp",
+      "version": "0.1.0",
+      "title": "Moblicode MCP"
+    },
+    "tools": [
+      {
+        "name": "get_company_info",
+        "title": "Get Moblicode company info",
+        "description": "Get an overview of Moblicode: pitch, founder, contact details, years in business, and the App Store categories they build for.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "List Moblicode services",
+        "description": "List the mobile app development services Moblicode offers (iOS, Android, App Store submission, and related work).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_case_studies",
+        "title": "List Moblicode case studies",
+        "description": "List Moblicode's published case studies with client, platform, category, blurb, and highlights.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "submit_contact_inquiry",
+        "title": "Submit a contact inquiry to Moblicode",
+        "description": "Send a project inquiry to the Moblicode team. The submission is emailed to Moblicode's shared support inbox — the same destination as the website contact form.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "description": "Full name of the person submitting."
+            },
+            "email": {
+              "type": "string",
+              "maxLength": 255,
+              "format": "email",
+              "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
+              "description": "Reply-to email address."
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 5000,
+              "description": "Description of the project or question."
+            },
+            "phone": {
+              "description": "Optional phone number.",
+              "type": "string",
+              "maxLength": 30
+            },
+            "company": {
+              "description": "Optional company name.",
+              "type": "string",
+              "maxLength": 120
+            },
+            "service": {
+              "description": "Optional service of interest (e.g. ios, android, submission).",
+              "type": "string",
+              "maxLength": 40
+            },
+            "budget": {
+              "description": "Optional budget range (e.g. '$25k–$50k').",
+              "type": "string",
+              "maxLength": 60
+            }
+          },
+          "required": [
+            "name",
+            "email",
+            "message"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
