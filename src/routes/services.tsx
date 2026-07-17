@@ -1,38 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SITE } from "@/lib/site";
+import { SERVICES as services, SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 
-
-const services = [
-  {
-    to: "/services/ios",
-    eyebrow: "iOS",
-    title: "iOS app development",
-    blurb: "iOS (iPhone/iPad) apps and games for all categories of the App Store. Ad-hoc (outside of the App Store) distribution is always an option. Fully native development using Swift and SwiftUI for smooth performance, modern UI, and seamless integration with Apple's ecosystem (iOS, iPadOS, watchOS, and visionOS where applicable).",
-    keywords: ["iOS app development company", "hire iOS developer", "iPhone app developers"],
-  },
-  {
-    to: "/services/android",
-    eyebrow: "Android",
-    title: "Android app development",
-    blurb: "Android (Phone / Tablet) applications built for the next generation of apps. Native Android development using Kotlin and Jetpack Compose for clean architecture, beautiful UIs, and excellent performance. UI/UX design, backend integration (Firebase, REST APIs, etc.), push notifications, in-app purchases, subscriptions, analytics, and Google Play optimization.",
-    keywords: ["android app development company", "custom mobile app development"],
-  },
-  {
-    to: "/contact",
-    eyebrow: "Database",
-    title: "Database design",
-    blurb: "We design and build robust, scalable databases and middle-tier APIs that power the mobile applications we develop — ensuring fast, secure, and reliable data handling. A well-architected backend is the foundation of any successful mobile app. We create systems that seamlessly connect your iOS and Android apps to the data and services they need.",
-    keywords: ["database development", "backend development", "API development"],
-  },
-  {
-    to: "/services/app-store-submission",
-    eyebrow: "Distribution",
-    title: "iOS (App Store) & Android (Play Store) distribution and ad-hoc (in house) distribution",
-    blurb: "We handle the complete distribution process for your mobile apps — whether you want to release publicly on the Apple App Store and Google Play Store, or distribute privately within your organization through ad-hoc / in-house distribution. Ad-hoc distribution (also called in-house or enterprise distribution) allows you to install your app directly on specific devices without going through the public App Store or Play Store.",
-    keywords: ["app store submission service", "ad hoc app distribution", "in house app distribution"],
-  },
-] as const;
 
 export const Route = createFileRoute("/services")({
   head: () => ({
