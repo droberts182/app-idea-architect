@@ -31,7 +31,7 @@
       {
         "name": "list_services",
         "title": "List Moblicode services",
-        "description": "List the mobile app development services Moblicode offers (iOS, Android, App Store submission, and related work).",
+        "description": "List the services Moblicode offers, exactly as rendered on the /services page.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -47,7 +47,7 @@
       {
         "name": "list_case_studies",
         "title": "List Moblicode case studies",
-        "description": "List Moblicode's published case studies with client, platform, category, blurb, and highlights.",
+        "description": "List Moblicode's published case studies (the same ones rendered on the /examples page): name, platform, category, and the descriptive blurb shown on the site.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,

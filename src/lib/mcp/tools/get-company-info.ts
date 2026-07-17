@@ -1,5 +1,5 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { SITE } from "@/lib/site";
+import { SITE, yearsInBusiness } from "@/lib/site";
 
 export default defineTool({
   name: "get_company_info",
@@ -18,7 +18,7 @@ export default defineTool({
       email: SITE.email,
       phone: SITE.phoneDisplay,
       founded: SITE.founded,
-      yearsInBusiness: SITE.yearsInBusiness,
+      yearsInBusiness,
       founder: {
         name: SITE.founderName,
         title: SITE.founderTitle,
