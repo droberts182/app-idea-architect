@@ -1,12 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SITE } from "@/lib/site";
+import { CASE_STUDIES, type CaseStudy, SITE } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
-import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
-import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
-import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.json";
-import rfxIphone1 from "@/assets/rfx-iphone-1.png.asset.json";
-import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
-import rfxIphone3 from "@/assets/rfx-iphone-3.png.asset.json";
 
 export const Route = createFileRoute("/examples")({
   head: () => ({
@@ -22,32 +16,10 @@ export const Route = createFileRoute("/examples")({
   component: ExamplesPage,
 });
 
-type Example = {
-  name: string;
-  platform: string;
-  category: string;
-  blurb: string;
-  images: (string | { src: string; heightClass?: string })[];
-};
-
-const iosExamples: Example[] = [
-  {
-    name: "Launch to Wellness",
-    platform: "iOS & Android",
-    category: "Health & Wellness",
-    blurb: "iOS & Android mental-health support app connecting clients with therapeutic resources and each other.\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n• Developed a forum feature enabling clients to connect with and support one another.\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
-  },
-  {
-    name: "RFX — RecruitFluency",
-    platform: "iOS & Android",
-    category: "Sports & Recruiting",
-    blurb: "A soccer recruiting platform connecting high-school athletes with college coaches, built and owned end-to-end across mobile, web, backend, and infrastructure.\n• Architected native iOS (Swift/SwiftUI) and Android (Kotlin/Jetpack Compose) apps, plus a Flutter web admin portal and a React/Vite club dashboard.\n• Built a NestJS/TypeScript backend on PostgreSQL database, deployed on DigitalOcean and Vercel\n• Designed an automated, round-based outreach engine emailing thousands of college coaches via Postmark, with per-coach/gender rate limits, NCAA contact-window rules, and division targeting.\n• Implemented subscription monetization (RevenueCat) with tiered/gated features, live YouTube highlight validation, and profile-completeness gating.",
-    images: [rfxIphone1.url, rfxIphone2.url, rfxIphone3.url],
-  },
-];
-
-const androidExamples: Example[] = [];
+const iosExamples: readonly CaseStudy[] = CASE_STUDIES.filter((c) => c.platform.includes("iOS"));
+const androidExamples: readonly CaseStudy[] = CASE_STUDIES.filter(
+  (c) => c.platform.includes("Android") && !c.platform.includes("iOS"),
+);
 
 
 function ExamplesPage() {
@@ -74,7 +46,7 @@ function ExamplesPage() {
   );
 }
 
-function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: string; items: Example[] }) {
+function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: string; items: readonly CaseStudy[] }) {
   return (
     <section className="rule-bottom">
       <div className="container-page pt-4 pb-16 md:pt-6 md:pb-20">

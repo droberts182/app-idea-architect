@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SITE } from "@/lib/site";
+import { SITE, yearsInBusiness } from "@/lib/site";
 import { CTABand } from "@/components/site/CTABand";
 
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: `About Moblicode — ${SITE.yearsInBusiness}+ years of US-based mobile development` },
-      { name: "description", content: `Moblicode is a US-based mobile app studio founded by ${SITE.founderName}. ${SITE.yearsInBusiness}+ years building iOS and Android applications across every App Store category.` },
+      { title: `About Moblicode — ${yearsInBusiness}+ years of US-based mobile development` },
+      { name: "description", content: `Moblicode is a US-based mobile app studio founded by ${SITE.founderName}. ${yearsInBusiness}+ years building iOS and Android applications across every App Store category.` },
       { property: "og:title", content: "About Moblicode" },
       { property: "og:description", content: SITE.pitch },
       { property: "og:url", content: "/about" },
