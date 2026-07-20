@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://moblicode.com/sitemap.xml
+
 # llms.txt for AI assistants (ChatGPT, Claude, Perplexity, Gemini)
 # https://moblicode.com/llms.txt
