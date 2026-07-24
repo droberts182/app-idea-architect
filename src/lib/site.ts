@@ -8,6 +8,8 @@ import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.js
 import rfxIphone1 from "@/assets/rfx-iphone-1.png.asset.json";
 import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
 import rfxIphone3 from "@/assets/rfx-iphone-3.png.asset.json";
+import gravballIpad1 from "@/assets/gravball-ipad-1.png.asset.json";
+import gravballIpad2 from "@/assets/gravball-ipad-2.png.asset.json";
 
 export const SITE = {
   name: "Moblicode",
@@ -122,6 +124,17 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
     blurb:
       "A soccer recruiting platform connecting high-school athletes with college coaches, built and owned end-to-end across mobile, web, backend, and infrastructure.\n• Architected native iOS (Swift/SwiftUI) and Android (Kotlin/Jetpack Compose) apps, plus a Flutter web admin portal and a React/Vite club dashboard.\n• Built a NestJS/TypeScript backend on PostgreSQL database, deployed on DigitalOcean and Vercel\n• Designed an automated, round-based outreach engine emailing thousands of college coaches via Postmark, with per-coach/gender rate limits, NCAA contact-window rules, and division targeting.\n• Implemented subscription monetization (RevenueCat) with tiered/gated features, live YouTube highlight validation, and profile-completeness gating.",
     images: [rfxIphone1.url, rfxIphone2.url, rfxIphone3.url],
+  },
+  {
+    name: "Gravball HD",
+    platform: "iOS — iPad Game",
+    category: "Games",
+    blurb:
+      "iPad game built in native iOS featuring physics-driven gameplay, atmospheric visuals, and progressive difficulty across timed levels.\n• Designed and shipped a fully native iPad game with responsive touch controls and smooth 60fps physics.\n• Built a level system with escalating difficulty, on-screen HUD (level, time, gravball count), and score tracking.\n• Crafted the game's visual identity — logo, menus, and in-game art — for a polished, cohesive look on iPad.",
+    images: [
+      { src: gravballIpad1.url, heightClass: "h-[280px]" },
+      { src: gravballIpad2.url, heightClass: "h-[280px]" },
+    ],
   },
 ];
 
