@@ -130,9 +130,9 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
     platform: "iOS — iPad Game",
     category: "Games",
     blurb:
-      "iPad game built in native iOS featuring physics-driven gameplay, atmospheric visuals, and progressive difficulty across timed levels.\n• Designed and shipped a fully native iPad game with responsive touch controls and smooth 60fps physics.\n• Built a level system with escalating difficulty, on-screen HUD (level, time, gravball count), and score tracking.\n• Crafted the game's visual identity — logo, menus, and in-game art — for a polished, cohesive look on iPad.",
+      "Legacy iPad game built in native iOS featuring physics-driven gameplay, atmospheric visuals, and progressive difficulty across timed levels.\n• Designed and shipped a fully native iPad game with responsive touch controls and smooth 60fps physics.\n• Built a level system with escalating difficulty, on-screen HUD (level, time, gravball count), and score tracking.\n• Crafted the game's visual identity — logo, menus, and in-game art — for a polished, cohesive look on iPad.",
     images: [
-      { src: gravballIpad1.url, heightClass: "h-[280px]" },
+      { src: gravballIpad1.url, heightClass: "h-[200px]" },
       { src: gravballIpad2.url, heightClass: "h-[280px]" },
     ],
   },
