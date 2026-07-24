@@ -8,6 +8,8 @@ import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.js
 import rfxIphone1 from "@/assets/rfx-iphone-1.png.asset.json";
 import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
 import rfxIphone3 from "@/assets/rfx-iphone-3.png.asset.json";
+import gravballIpad1 from "@/assets/gravball-ipad-1.png.asset.json";
+import gravballIpad2 from "@/assets/gravball-ipad-2.png.asset.json";
 
 export const SITE = {
   name: "Moblicode",
