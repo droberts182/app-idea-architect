@@ -109,6 +109,7 @@ export type CaseStudy = {
   category: string;
   blurb: string;
   images: CaseStudyImage[];
+  imagesMarginTopClass?: string;
 };
 
 export const CASE_STUDIES: readonly CaseStudy[] = [
