@@ -10,9 +10,9 @@ import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
 import rfxIphone3 from "@/assets/rfx-iphone-3.png.asset.json";
 import gravballIpad1 from "@/assets/gravball-ipad-1.png.asset.json";
 import gravballIpad2 from "@/assets/gravball-ipad-2.png.asset.json";
-import mytsaIphone1 from "@/assets/mytsa-iphone-1.png.asset.json";
-import mytsaIphone2 from "@/assets/mytsa-iphone-2.png.asset.json";
-import mytsaIphone3 from "@/assets/mytsa-iphone-3.png.asset.json";
+import mytsaIphone1 from "@/assets/mytsa-iphone-1-cropped.png";
+import mytsaIphone2 from "@/assets/mytsa-iphone-2-cropped.png";
+import mytsaIphone3 from "@/assets/mytsa-iphone-3-cropped.png";
 
 export const SITE = {
   name: "Moblicode",
