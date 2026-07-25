@@ -129,6 +129,17 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
     images: [rfxIphone1.url, rfxIphone2.url, rfxIphone3.url],
   },
   {
+    name: "Gravball HD",
+    platform: "iOS — iPad Game",
+    category: "Games",
+    blurb:
+      "Legacy iPad game built in native iOS featuring physics-driven gameplay, atmospheric visuals, and progressive difficulty across timed levels.\n• Designed and shipped a fully native iPad game with responsive touch controls and smooth 60fps physics.\n• Built a level system with escalating difficulty, on-screen HUD (level, time, gravball count), and score tracking.\n• Crafted the game's visual identity — logo, menus, and in-game art — for a polished, cohesive look on iPad.",
+    images: [
+      { src: gravballIpad1.url, heightClass: "h-[240px]" },
+      { src: gravballIpad2.url, heightClass: "h-[290px]" },
+    ],
+  },
+  {
     name: "MyTSA",
     platform: "iOS & Android",
     category: "Travel",
