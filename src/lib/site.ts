@@ -142,7 +142,7 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
   },
   {
     name: "MyTSA",
-    platform: "iOS & Android",
+    platform: "iOS",
     category: "Travel",
     blurb:
       "Official Transportation Security Administration app giving passengers 24/7 access to the information they most frequently request from TSA. Downloaded millions of times on the App Store.\n• \"Can I Bring?\" search for what's allowed in carry-on and checked bags.\n• Crowd-sourced and historical TSA checkpoint wait times by airport, terminal, day, and hour.\n• FAA delay and weather status for favorite airports nationwide.",
