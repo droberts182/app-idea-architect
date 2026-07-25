@@ -10,6 +10,9 @@ import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
 import rfxIphone3 from "@/assets/rfx-iphone-3.png.asset.json";
 import gravballIpad1 from "@/assets/gravball-ipad-1.png.asset.json";
 import gravballIpad2 from "@/assets/gravball-ipad-2.png.asset.json";
+import mytsaIphone1 from "@/assets/mytsa-iphone-1.png.asset.json";
+import mytsaIphone2 from "@/assets/mytsa-iphone-2.png.asset.json";
+import mytsaIphone3 from "@/assets/mytsa-iphone-3.png.asset.json";
 
 export const SITE = {
   name: "Moblicode",
@@ -135,6 +138,14 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
       { src: gravballIpad1.url, heightClass: "h-[240px]" },
       { src: gravballIpad2.url, heightClass: "h-[290px]" },
     ],
+  },
+  {
+    name: "MyTSA",
+    platform: "iOS & Android",
+    category: "Travel",
+    blurb:
+      "Official Transportation Security Administration app giving passengers 24/7 access to the information they most frequently request from TSA. Named Best Government Mobile App by ACT-IAC and recognized by TSA as one of the Top 15 Government IT Innovators.\n• \"Can I Bring?\" search for what's allowed in carry-on and checked bags.\n• Crowd-sourced and historical TSA checkpoint wait times by airport, terminal, day, and hour.\n• FAA delay and weather status for favorite airports nationwide.\n• AskTSA live assistance and the Chat with Ace virtual assistant, plus TSA PreCheck® enrollment and benefits.",
+    images: [mytsaIphone1.url, mytsaIphone2.url, mytsaIphone3.url],
   },
 ];
 
