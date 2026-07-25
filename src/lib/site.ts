@@ -146,9 +146,9 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
     blurb:
       "Official Transportation Security Administration app giving passengers 24/7 access to the information they most frequently request from TSA. Named Best Government Mobile App by ACT-IAC and recognized by TSA as one of the Top 15 Government IT Innovators.\n• \"Can I Bring?\" search for what's allowed in carry-on and checked bags.\n• Crowd-sourced and historical TSA checkpoint wait times by airport, terminal, day, and hour.\n• FAA delay and weather status for favorite airports nationwide.\n• AskTSA live assistance and the Chat with Ace virtual assistant, plus TSA PreCheck® enrollment and benefits.",
     images: [
-      { src: mytsaIphone1, heightClass: "h-[360px]", widthClass: "w-[201px]" },
-      { src: mytsaIphone2, heightClass: "h-[320px]", widthClass: "w-[201px]" },
-      { src: mytsaIphone3, heightClass: "h-[360px]", widthClass: "w-[201px]" },
+      { src: mytsaIphone1, heightClass: "h-[253px]" },
+      { src: mytsaIphone2, heightClass: "h-[253px]" },
+      { src: mytsaIphone3, heightClass: "h-[253px]" },
     ],
   },
 ];
