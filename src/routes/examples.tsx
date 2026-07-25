@@ -58,7 +58,7 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
                 <h3 className="mt-2 text-foreground">{ex.name}</h3>
                 <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{ex.blurb}</p>
               </div>
-              <div className="mt-8 flex flex-nowrap items-center justify-center gap-6 sm:justify-start overflow-x-auto">
+              <div className={`${ex.imagesMarginTopClass ?? "mt-8"} flex flex-nowrap items-center justify-center gap-6 sm:justify-start overflow-x-auto`}>
                 {ex.images.map((img, i) => {
                   const src = typeof img === "string" ? img : img.src;
                   const heightClass = typeof img === "string" ? "h-[360px]" : (img.heightClass ?? "h-[360px]");
