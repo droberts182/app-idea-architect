@@ -62,13 +62,14 @@ function ExampleSection({ title, eyebrow, items }: { title: string; eyebrow: str
                 {ex.images.map((img, i) => {
                   const src = typeof img === "string" ? img : img.src;
                   const heightClass = typeof img === "string" ? "h-[360px]" : (img.heightClass ?? "h-[360px]");
+                  const widthClass = typeof img === "string" ? "w-auto" : (img.widthClass ?? "w-auto");
                   return (
                     <img
                       key={i}
                       src={src}
                       alt={`${ex.name} — screen ${i + 1} — ${ex.platform} app built by Moblicode`}
                       loading="lazy"
-                      className={`${heightClass} w-auto object-contain flex-shrink-0`}
+                      className={`${heightClass} ${widthClass} object-contain flex-shrink-0`}
                     />
                   );
                 })}
