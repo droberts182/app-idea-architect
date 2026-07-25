@@ -151,6 +151,7 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
       { src: mytsaIphone2, heightClass: "h-[253px]", widthClass: "mx-6" },
       { src: mytsaIphone3, heightClass: "h-[253px]", widthClass: "mx-6" },
     ],
+    imagesMarginTopClass: "mt-16",
   },
 ];
 
