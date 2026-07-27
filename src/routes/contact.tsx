@@ -139,15 +139,6 @@ function ContactPage() {
                 <li><a href={SITE.googleProfile} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Google</a></li>
               </ul>
             </div>
-            <div>
-              <div className="eyebrow">What Happens Next?</div>
-              <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
-                <li><span className="font-medium text-foreground">We review your inquiry</span> — Usually within one business day.</li>
-                <li><span className="font-medium text-foreground">We get back to you</span> — With clarifying questions or to schedule a quick call.</li>
-                <li><span className="font-medium text-foreground">You receive a proposal</span> — Including a fixed-price estimate, timeline, and clear engagement terms.</li>
-                <li><span className="font-medium text-foreground">We get to work</span> — Collaborating closely with you to deliver an app you're 100% satisfied with.</li>
-              </ul>
-            </div>
 
           </aside>
         </div>
