@@ -3,7 +3,7 @@
 // case studies or services in page components or in tool handlers.
 
 import launchToWellnessIos from "@/assets/launch-to-wellness-ios.png.asset.json";
-import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2.png.asset.json";
+import launchToWellnessIos2 from "@/assets/launch-to-wellness-ios-2-clean.png";
 import launchToWellnessIos3 from "@/assets/launch-to-wellness-ios-3.png.asset.json";
 import rfxIphone1 from "@/assets/rfx-iphone-1.png.asset.json";
 import rfxIphone2 from "@/assets/rfx-iphone-2.png.asset.json";
@@ -119,7 +119,7 @@ export const CASE_STUDIES: readonly CaseStudy[] = [
     category: "Health & Wellness",
     blurb:
       "iOS & Android mental-health support app connecting clients with therapeutic resources and each other.\n• Built an AI chatbot that functions as a virtual therapist, providing clients with on-demand, conversational support.\n• Developed a forum feature enabling clients to connect with and support one another.\n• Architected the backend on Firebase for authentication, data storage, and real-time updates.",
-    images: [launchToWellnessIos.url, launchToWellnessIos2.url, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
+    images: [launchToWellnessIos.url, launchToWellnessIos2, { src: launchToWellnessIos3.url, heightClass: "h-[280px]" }],
   },
   {
     name: "RFX — RecruitFluency",
