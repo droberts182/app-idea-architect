@@ -63,29 +63,18 @@ function ServicesPage() {
       <section className="rule-top">
         <div className="container-page py-20">
           <div className="eyebrow">Why mobile</div>
-          <h2 className="mt-4 max-w-3xl">Reasons businesses want a mobile app</h2>
-          <div className="mt-10 grid gap-8">
-            {reasons.map((r, i) => (
-              <div key={r.title} className="grid gap-4 md:grid-cols-[1fr_2fr]">
-                <div className="flex items-baseline gap-3">
-                  <span className="font-display text-2xl text-accent">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="text-foreground">{r.title}</h3>
+          <h2 className="mt-4 max-w-3xl">What a mobile app can do for your business</h2>
+          <div className="mt-10 grid gap-x-10 gap-y-6 md:grid-cols-2">
+            {benefits.map((b) => (
+              <div key={b.title} className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <div>
+                  <h3 className="text-foreground">{b.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-foreground/70">{b.description}</p>
                 </div>
-                <ul className="space-y-1 text-xs leading-snug text-foreground/70">
-                  {r.points.map((p) => (
-                    <li key={p} className="flex gap-2">
-                      <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                      <span>{p}</span>
-                    </li>
-                  ))}
-                </ul>
-
               </div>
             ))}
           </div>
-
-
-
         </div>
       </section>
 
