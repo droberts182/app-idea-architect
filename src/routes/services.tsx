@@ -91,81 +91,74 @@ function ServicesPage() {
   );
 }
 
-const reasons: { title: string; points: string[] }[] = [
+const benefits: { title: string; description: string }[] = [
   {
-    title: "Boost customer engagement and retention",
-    points: [
-      "Push notifications, personalized content, and in-app messaging drive repeat visits and higher engagement (often 3x higher than websites).",
-      "Loyalty programs, rewards, and seamless reordering (e.g., Starbucks-style) increase retention and lifetime value. Keeping existing customers is far cheaper than acquiring new ones.",
-      "A direct channel bypasses social media algorithms and browser friction.",
-    ],
+    title: "Direct line to your customer",
+    description: "Push notifications reach people instantly — no ad spend, no algorithm deciding who sees you.",
   },
   {
-    title: "Increase sales and revenue",
-    points: [
-      "Faster, more convenient purchasing with saved payment info, one-tap checkout, and in-app purchases.",
-      "Mobile commerce continues to grow rapidly; apps often convert at much higher rates (e.g., 157% higher than mobile sites in some data).",
-      "New monetization opportunities: subscriptions, in-app sales, upsells, and exclusive deals.",
-    ],
+    title: "Higher conversion, bigger baskets",
+    description: "App shoppers convert up to 11x more often than mobile-web visitors, and average order values run 10–50% higher in-app.",
   },
   {
-    title: "Enhance brand visibility and awareness",
-    points: [
-      "An app icon on a user's home screen provides constant, passive brand exposure without ongoing ad spend.",
-      "Appears in app stores, improving discoverability and reinforcing your brand as modern and customer-centric.",
-    ],
+    title: "Customers who come back",
+    description: "60% of app customers purchase again within a year, versus roughly 40% of mobile-web-only customers — and app users show up to 5x higher lifetime value.",
   },
   {
-    title: "Deliver superior customer experience and service",
-    points: [
-      "24/7 access to services, booking, support, tracking, or information.",
-      "Personalized experiences based on user data, behavior, and preferences (many customers prefer or expect this).",
-      "Faster support (chat, FAQs, self-service) leading to higher satisfaction and loyalty.",
-    ],
+    title: "Deeper engagement, every visit",
+    description: "App sessions run 3–7x longer than mobile-web visits, and shoppers browse far more of what's on offer.",
   },
   {
-    title: "Gather valuable customer insights and data",
-    points: [
-      "Detailed analytics on behavior, preferences, and usage that websites often can't match.",
-      "Enables better product development, targeted marketing, and personalized offers.",
-    ],
+    title: "A daily seat on the home screen",
+    description: "Every unlock is a free brand impression — repeated visibility no social feed can guarantee.",
   },
   {
-    title: "Streamline internal operations and efficiency",
-    points: [
-      "Employee-facing apps for field service, inventory management, CRM, scheduling, or sales tools.",
-      "Automation of tasks, real-time data sync, and reduced paperwork.",
-    ],
+    title: "Revenue that outpaces your user share",
+    description: "App users are often just 7–16% of a brand's customers, yet can drive up to 62% of total revenue.",
   },
   {
-    title: "Stay competitive and meet customer expectations",
-    points: [
-      "In a mobile-first world, customers (especially younger demographics) expect apps for convenience.",
-      "Differentiates you from competitors who only have websites; can become a market advantage or necessity in industries like e-commerce, finance, health, retail, food delivery, etc.",
-    ],
+    title: "Personalization at scale",
+    description: "Apps can remember preferences, purchase history, and behavior to serve tailored recommendations and content — something a generic website can't do nearly as well.",
   },
   {
-    title: "Support specific business models or industries",
-    points: [
-      "E-commerce / retail: better shopping experience, AR try-ons, wish lists.",
-      "Service businesses (booking, fitness, education): scheduling, progress tracking, content delivery.",
-      "B2B: client portals, project management, or field tools.",
-      "Finance / health: secure transactions, monitoring, telehealth features.",
-    ],
+    title: "Richer customer data and analytics",
+    description: "Real-time tracking of in-app behavior shows you exactly what's popular, where people drop off, and how customer journeys actually unfold — sharper insight than web analytics typically offers.",
   },
   {
-    title: "Marketing and loyalty channel",
-    points: [
-      "Built-in marketing tools (notifications, geofencing, referrals).",
-      "Effective for building community, running campaigns, and fostering long-term relationships.",
-    ],
+    title: "Faster, simpler checkout",
+    description: "Saved payment info, one-tap purchasing, and native payment integrations (Apple Pay, Google Pay) cut friction and reduce cart abandonment.",
   },
   {
-    title: "Future-proofing and scalability",
-    points: [
-      "Prepares for emerging tech like AI personalization, AR/VR features, wearables integration, or offline functionality.",
-      "Provides an owned platform less dependent on third-party platforms (Apple/Google policies, web changes).",
-    ],
+    title: "New revenue streams",
+    description: "In-app purchases, subscriptions, and premium/unlockable features give you monetization options a plain website doesn't support as naturally.",
+  },
+  {
+    title: "Loyalty and gamification",
+    description: "Points, rewards, tiered memberships, and app-exclusive discounts are easier to build and track in an app, and they give people a reason to keep coming back.",
+  },
+  {
+    title: "Built-in customer support",
+    description: "In-app messaging, chatbots, and feedback tools let customers get help without leaving the experience or hunting for a phone number.",
+  },
+  {
+    title: "Offline access",
+    description: "Apps can let people browse, use core features, or queue actions without a live connection — useful for spotty signal or travel, and impossible on a website.",
+  },
+  {
+    title: "Location-based marketing",
+    description: "Geofencing and GPS integration let you trigger offers or notifications when a customer is near a store or relevant location.",
+  },
+  {
+    title: "Stronger security",
+    description: "Biometric login (Face ID, fingerprint) and native encryption make transactions and account access feel safer than typing a password on mobile web.",
+  },
+  {
+    title: "Operational efficiency",
+    description: "Beyond customer-facing use, apps can automate booking/scheduling, order tracking, and inventory management — cutting manual work and errors internally.",
+  },
+  {
+    title: "Free discoverability",
+    description: "A presence in the App Store / Google Play is itself a marketing channel — people actively search there for tools in your category.",
   },
 ];
 
