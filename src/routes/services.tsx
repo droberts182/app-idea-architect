@@ -116,6 +116,84 @@ function ServicesPage() {
   );
 }
 
+const reasons: { title: string; points: string[] }[] = [
+  {
+    title: "Boost customer engagement and retention",
+    points: [
+      "Push notifications, personalized content, and in-app messaging drive repeat visits and higher engagement (often 3x higher than websites).",
+      "Loyalty programs, rewards, and seamless reordering (e.g., Starbucks-style) increase retention and lifetime value. Keeping existing customers is far cheaper than acquiring new ones.",
+      "A direct channel bypasses social media algorithms and browser friction.",
+    ],
+  },
+  {
+    title: "Increase sales and revenue",
+    points: [
+      "Faster, more convenient purchasing with saved payment info, one-tap checkout, and in-app purchases.",
+      "Mobile commerce continues to grow rapidly; apps often convert at much higher rates (e.g., 157% higher than mobile sites in some data).",
+      "New monetization opportunities: subscriptions, in-app sales, upsells, and exclusive deals.",
+    ],
+  },
+  {
+    title: "Enhance brand visibility and awareness",
+    points: [
+      "An app icon on a user's home screen provides constant, passive brand exposure without ongoing ad spend.",
+      "Appears in app stores, improving discoverability and reinforcing your brand as modern and customer-centric.",
+    ],
+  },
+  {
+    title: "Deliver superior customer experience and service",
+    points: [
+      "24/7 access to services, booking, support, tracking, or information.",
+      "Personalized experiences based on user data, behavior, and preferences (many customers prefer or expect this).",
+      "Faster support (chat, FAQs, self-service) leading to higher satisfaction and loyalty.",
+    ],
+  },
+  {
+    title: "Gather valuable customer insights and data",
+    points: [
+      "Detailed analytics on behavior, preferences, and usage that websites often can't match.",
+      "Enables better product development, targeted marketing, and personalized offers.",
+    ],
+  },
+  {
+    title: "Streamline internal operations and efficiency",
+    points: [
+      "Employee-facing apps for field service, inventory management, CRM, scheduling, or sales tools.",
+      "Automation of tasks, real-time data sync, and reduced paperwork.",
+    ],
+  },
+  {
+    title: "Stay competitive and meet customer expectations",
+    points: [
+      "In a mobile-first world, customers (especially younger demographics) expect apps for convenience.",
+      "Differentiates you from competitors who only have websites; can become a market advantage or necessity in industries like e-commerce, finance, health, retail, food delivery, etc.",
+    ],
+  },
+  {
+    title: "Support specific business models or industries",
+    points: [
+      "E-commerce / retail: better shopping experience, AR try-ons, wish lists.",
+      "Service businesses (booking, fitness, education): scheduling, progress tracking, content delivery.",
+      "B2B: client portals, project management, or field tools.",
+      "Finance / health: secure transactions, monitoring, telehealth features.",
+    ],
+  },
+  {
+    title: "Marketing and loyalty channel",
+    points: [
+      "Built-in marketing tools (notifications, geofencing, referrals).",
+      "Effective for building community, running campaigns, and fostering long-term relationships.",
+    ],
+  },
+  {
+    title: "Future-proofing and scalability",
+    points: [
+      "Prepares for emerging tech like AI personalization, AR/VR features, wearables integration, or offline functionality.",
+      "Provides an owned platform less dependent on third-party platforms (Apple/Google policies, web changes).",
+    ],
+  },
+];
+
 const benefits: { title: string; description: string }[] = [
   {
     title: "Direct line to your customer",
